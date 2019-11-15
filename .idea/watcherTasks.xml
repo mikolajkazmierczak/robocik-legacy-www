@@ -16,9 +16,9 @@
       <option name="outputFromStdout" value="false" />
       <option name="program" value="sass" />
       <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="scopeName" value="style.sass" />
       <option name="trackOnlyRoot" value="false" />
-      <option name="workingDir" value="$FileDir$" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
       <envs />
     </TaskOptions>
   </component>

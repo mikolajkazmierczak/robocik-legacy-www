@@ -14,13 +14,14 @@
 /* Colors */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Jura:700|Montserrat:400,800|Raleway:400,700&display=swap");
+/* Transitions */
 /* 2 Core */
 * {
   box-sizing: border-box; }
 
 body {
   background-color: #f5fffF;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -34,6 +35,7 @@ p {
 /* 4 Menu */
 menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 12px 30px;
@@ -50,6 +52,35 @@ menu {
       margin-left: 15px;
       font-family: "Jura", sans-serif;
       font-size: 25px; }
+  menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0; }
+    menu ul li {
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      margin: 0 0 0 8px;
+      text-indent: 0;
+      list-style-type: none;
+      font-size: 15px;
+      transition: background-color 0.25s, color 0.25s;
+      color: #fff;
+      cursor: pointer; }
+      menu ul li a {
+        padding: 3px 6px;
+        color: inherit;
+        text-decoration: none; }
+      menu ul li img {
+        border-radius: 5px;
+        height: 20px; }
+    menu ul li:hover {
+      background-color: #fff;
+      color: #000; }
+    menu ul #pl, menu ul #en {
+      padding: 3px; }
+    menu ul #pl:hover, menu ul #en:hover {
+      background-color: #9ffcc6; }
 
 /* 5 Footer */
 
