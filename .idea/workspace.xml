@@ -2,20 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/smoothscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/partners.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/__mixins.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/3531c42d7e2755817913f9e3250c0e59548b42dc/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_core.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_mixins.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_var.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/footer.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/header.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/menu.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/ca95bed9a1f4d4456e1c486644f8c5b0c7683e21/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_core.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_mixins.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_var.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/footer.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/header.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/menu.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_core.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_var.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/menu.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/menu.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/en.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/pl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__var.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/smoothscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/menu.sass" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +57,13 @@
   <component name="FavoritesManager">
     <favorites_list name="RobocikOldNew" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -41,7 +74,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="NamedScopeManager">
-    <scope name="style.sass" pattern="file:style.sass||file[RobocikOldNew]:src/sass/*" />
+    <scope name="Sass" pattern="file:style.sass||file[RobocikOldNew]:src/sass//*" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TZg017HkTydlDYI1amsbAsfekV" />
@@ -51,7 +84,7 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/.bin/babel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
@@ -90,7 +123,15 @@
       <workItem from="1573743587547" duration="1383000" />
       <workItem from="1573747884562" duration="2084000" />
       <workItem from="1573751186471" duration="831000" />
-      <workItem from="1573752118115" duration="6594000" />
+      <workItem from="1573752118115" duration="6786000" />
+      <workItem from="1573838626623" duration="11273000" />
+      <workItem from="1573867123262" duration="377000" />
+      <workItem from="1573868321709" duration="6261000" />
+      <workItem from="1573917380548" duration="1208000" />
+      <workItem from="1574101731074" duration="1333000" />
+      <workItem from="1574342557175" duration="11462000" />
+      <workItem from="1574413085042" duration="3415000" />
+      <workItem from="1574446126800" duration="27355000" />
     </task>
     <servers />
   </component>

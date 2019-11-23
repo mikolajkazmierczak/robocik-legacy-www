@@ -1,0 +1,62 @@
+*
+  box-sizing: border-box
+
+body
+  background-color: $colorLight
+  font-family: 'Raleway', sans-serif
+
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+  padding: 0
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Montserrat", sans-serif
+
+h2
+  font-size: 11vw
+h3
+  font-size: 6vw
+p
+  font-size: 4.5vw
+
+@include breakpoint($brMedium)
+  h2
+    font-size: 5.5vw
+  h3
+    font-size: 2vw
+  p
+    font-size: 1.5vw
+
+
+/* Site Wrapper */
+
+.site-wrapper
+  position: relative
+  top: $sizeHeader
+
+
+/* Column System */
+
+.cols
+  display: flex
+  flex-flow: column
+  width: 100%
+  .col
+    overflow: hidden
+    width: 100%
+
+@include breakpoint($brMedium)
+  .cols
+    flex-flow: row
+    justify-content: center
+    .col--2
+      width: 20%
+    .col--4
+      width: 40%
+    .col--6
+      width: 60%
+    .col--8
+      width: 80%

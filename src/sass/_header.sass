@@ -1,0 +1,48 @@
+header
+  position: fixed
+  top: 0
+  left: 0
+  overflow: hidden
+  display: flex
+  justify-content: space-between
+  padding: 12px 12px
+  height: $sizeHeader
+  width: 100%
+  background-color: $colorMain
+  color: #fff
+  z-index: 100
+
+  .logo
+    display: flex
+    align-items: center
+    height: 100%
+    text-decoration: none
+    transform: translateY(-200%)
+    transition: transform $tNormal
+    .logo__icon
+      height: 100%
+      //transform: scale(1.2)
+    .logo__title
+      margin-left: 12px
+      font-family: 'Jura', sans-serif
+      font-size: 28px
+      color: #fff
+  .logo--visible
+    transform: translateY(0)
+
+  .menu-button
+    display: flex
+    height: 100%
+    .menu-button__icon
+      display: none
+      height: 100%
+    .menu-button__icon--active
+      display: block
+
+  @include breakpoint($brMedium)
+    .menu-button
+      display: none
+
+//@include breakpoint($brBig)
+//  header
+//    padding: 12px 15%
