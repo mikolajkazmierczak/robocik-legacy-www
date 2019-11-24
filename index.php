@@ -16,8 +16,8 @@
 
   <div class="index-wrapper">
     <div class="spikes-bar">
-      <img src="<?php echo $rootUrl . 'src/img/icons/spikes.svg' ?>">
-      <img src="<?php echo $rootUrl . 'src/img/icons/spikes.svg' ?>">
+      <img src="<?php echo $rootUrl . 'src/img/spikes.svg' ?>">
+      <img src="<?php echo $rootUrl . 'src/img/spikes.svg' ?>">
     </div>
 
     <section class="section-graphics section-vision cols">
@@ -58,18 +58,6 @@
       <div class="section-drone__elem col col--4"></div>
     </section>
 
-    <section class="section-team cols">
-      <div class="scroll-anchor" id="team"></div>
-      <div class="section-team__text col col--6">
-        <h2>Damian Brzoza</h2>
-        <h3>Członek Działu Software</h3>
-        <p>"Życie jest jak pudełko czekoladek.<br>A z pudełkiem czekoladek sprawniej<br>rządzi się w grupie."</p>
-      </div>
-      <div class="section-team__img col col--4">
-        <img src="<?php echo $rootUrl . 'src/img/team/Damian_Brzoza.jpg' ?>">
-      </div>
-    </section>
-
     <section class="section-graphics section-divisions cols">
       <div class="scroll-anchor" id="divisions"></div>
       <div class="section-graphics__elem col col--2">
@@ -89,18 +77,46 @@
       </div>
     </section>
 
+    <section class="section-team cols">
+      <div class="scroll-anchor" id="team"></div>
+      <div class="section-team__text col col--6">
+        <span>ZAŁOGA</span>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <p></p>
+      </div>
+      <div class="section-team__img col col--4">
+        <img src="">
+      </div>
+      <div class="section-team__arrow section-team__arrow--previous">
+        <img src="<?php echo $rootUrl . 'src/img/icons/team/previous.svg' ?>">
+      </div>
+      <div class="section-team__arrow section-team__arrow--next">
+        <img src="<?php echo $rootUrl . 'src/img/icons/team/next.svg' ?>">
+      </div>
+    </section>
+
     <section class="section-contact">
       <div class="scroll-anchor" id="contact"></div>
       <div class="section-contact__elem">
         <h2>Kontakt</h2>
         <h3>Siedziba:</h3>
         <p>Politechnika Wrocławska<br>Łukasiewicza 7/9, bud. B-9, p.40<br>50-371 Wrocław</p>
-        <a href="mailto:robocikb9@gmail.com"c>robocikb9@gmail.com</a>
+        <a href="mailto:robocikb9@gmail.com">robocikb9@gmail.com</a>
+        <div class="section-contact__icons">
+          <a href="https://www.facebook.com/knrobocik/" target="_blank">
+            <img src="<?php echo $rootUrl . 'src/img/icons/facebook.svg' ?>">
+          </a>
+          <a href="https://www.youtube.com/channel/UCWaBdSXJdCexMjQ0nd5RBdw" target="_blank">
+            <img src="<?php echo $rootUrl . 'src/img/icons/youtube.svg' ?>">
+          </a>
+        </div>
       </div>
     </section>
 
     <?php include 'layout/copyright.php'; ?>
 
-  </div>
+  </div> <!-- .index-wrapper -->
 
 <?php include 'layout/footer.php'; ?>

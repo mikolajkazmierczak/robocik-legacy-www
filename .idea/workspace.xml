@@ -2,46 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/smoothscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/partners.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/__mixins.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/_global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/team.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/team.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/3531c42d7e2755817913f9e3250c0e59548b42dc/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_core.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_mixins.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/_var.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/footer.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/header.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/6ee58b7b3d2419bcccddada07249d3203321530a/menu.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/ca95bed9a1f4d4456e1c486644f8c5b0c7683e21/style.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_core.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_mixins.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/_var.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/footer.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/header.sassc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8fef37ca3dc6371a25caf3c17cc79fc19a3138a/menu.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/header.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/menu.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/smoothscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/smoothscroll.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/en.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/pl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__var.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/smoothscroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/menu.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/spikes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/smoothscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/smoothscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/__core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +114,8 @@
       <workItem from="1574101731074" duration="1333000" />
       <workItem from="1574342557175" duration="11462000" />
       <workItem from="1574413085042" duration="3415000" />
-      <workItem from="1574446126800" duration="27355000" />
+      <workItem from="1574446126800" duration="32486000" />
+      <workItem from="1574522071312" duration="30523000" />
     </task>
     <servers />
   </component>

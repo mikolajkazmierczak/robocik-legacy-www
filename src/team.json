@@ -1,0 +1,44 @@
+{"team":[
+  {
+    "name":"Adam Szwedor",
+    "role":"Członek Działu XXX",
+    "contact":"test@mail.pl",
+    "text":"Denerwuje mnie własna niewiedza.",
+    "photo":"src/img/team/Adam_Szwedor.jpg"
+  },
+  {
+    "name":"Aleksandra Maziarz",
+    "role":"Członek Działu XXX",
+    "contact":"test@mail.pl",
+    "text":"Do the best you can until you know better. Then when you know better, do better.",
+    "photo":"src/img/team/Aleksandra_Maziarz.png"
+  },
+  {
+    "name":"Damian Brzoza",
+    "role":"Członek Działu XXX",
+    "contact":"test@mail.pl",
+    "text":"Żeby zrealizować swoje zamiary potrzebna jest przede wszystkim ambicja, a później talent, wiedza i w końcu szczęście.",
+    "photo":"src/img/team/Damian_Brzoza.jpg"
+  },
+  {
+    "name":"Jacek Ziemba",
+    "role":"Opiekun Koła",
+    "contact":"test@mail.pl",
+    "text":"Żeby zrealizować swoje zamiary potrzebna jest przede wszystkim ambicja, a później talent, wiedza i w końcu szczęście.",
+    "photo":"src/img/team/Jacek_Ziemba.jpg"
+  },
+  {
+    "name":"Kacper Krej",
+    "role":"Członek Działu XXX",
+    "contact":"test@mail.pl",
+    "text":"",
+    "photo":"src/img/team/Kacper_Krej.jpg"
+  },
+  {
+    "name":"Łukasz Dworzak",
+    "role":"Członek Działu XXX",
+    "contact":"",
+    "text":"Potężna wichura łamiąc duże drzewa, trzciną zaledwie tylko kołysze.",
+    "photo":"src/img/team/Lukasz_Dworzak.jpg"
+  }
+]}
