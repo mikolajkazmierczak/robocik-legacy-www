@@ -39,6 +39,21 @@
       </div>
     </section>
 
+    <section class="cols cols--test">
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+      <div class="col col--1"></div>
+    </section>
+
     <section class="section-drone cols"
              style="background-image: url(<?php echo $rootUrl . 'src/img/rov_4_0/rov.png' ?>)">
       <div class="scroll-anchor" id="project"></div>
