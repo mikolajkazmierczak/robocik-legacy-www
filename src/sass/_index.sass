@@ -1,127 +1,9 @@
+
 /* Index Banner */
 
-.index-banner
-  position: relative
-  top: 0
-  left: 0
-  display: flex
-  flex-flow: column
-  justify-content: space-between
-  align-content: center
-  height: 100vh
-  width: 100%
-  background-color: $colorSec
-  z-index: 1
+.banner-wrapper
+  overflow: hidden
 
-  .index-banner__logo
-    position: absolute
-    top: 25px
-    right: 25px
-    height: 75vh
-    opacity: 0.5
-    z-index: 1
-
-  .index-banner__text
-    padding: 20px
-    z-index: 2
-    h3
-      margin: 20px 0
-      span
-        white-space: nowrap
-        font-size: 16vw
-    p
-      margin-bottom: 15px
-      padding-left: 40px
-
-  .index-banner__img
-    position: relative
-    z-index: 3
-    // team
-    img
-      display: block
-      width: 100%
-    // side
-    img:nth-child(2)
-      display: none
-
-@include breakpoint($brMedium)
-  .index-banner
-    position: fixed
-    flex-flow: row
-    margin-top: $sizeHeader
-    height: calc(100vh - #{$sizeHeader})
-
-    .index-banner__logo
-      top: -200px
-      right: 0px
-      height: 120vh
-
-    .index-banner__text
-      padding: 50px
-      h3
-        span
-          font-size: 8vw
-
-    .index-banner__img
-      overflow: visible
-      // team
-      img
-        display: none
-      // side
-      img:nth-child(2)
-        position: absolute
-        right: 0
-        bottom: 0
-        display: block
-        height: 80%
-        width: auto
-
-@media only screen and (max-width: 340px)
-  .index-banner
-    .index-banner__text
-      padding: 20px
-      h3
-        margin: 0 0 5px 0
-
-
-/* Index Wrapper */
-
-.index-wrapper
-  position: relative
-  margin-top: 0
-  z-index: 2
-@include breakpoint($brMedium)
-  .index-wrapper
-    margin-top: 100vh
-
-.spikes-bar
-  position: relative
-  top: 1px
-  display: flex
-  flex-wrap: nowrap
-  img
-    display: block
-    width: 100vw
-  img:nth-child(2)
-    display: none
-
-@include breakpoint($brMedium)
-  .spikes-bar
-    img
-      width: 50vw
-    img:nth-child(2)
-      display: block
-      width: 50vw
-
-
-/* Scroll Anchor */
-
-.scroll-anchor
-  position: absolute
-  left: 0
-  top: calc(#{-$sizeHeader} + 1px)
-  height: 0
-  width: 0
 
 
 /* Sections */
@@ -129,189 +11,437 @@
 section
   overflow-x: hidden
   position: relative
-  left: 0
   width: 100%
 
+  .scroll-anchor
+    position: absolute
+    left: 0
+    top: calc(#{-$sizeHeader} + 1px)
+    height: 0
+    width: 0
+
+  .section__text--project
+    h1
+      margin-top: 10px
+      margin-bottom: 25px
+    p
+      margin-top: 15px
+
+
+.section-banner-main
+  z-index: 1
+  overflow: visible
+  padding: 20px
+  min-height: 100vh
+  width: 100%
+  background-color: $colorMain
+
+  .section-banner-main__bg
+    z-index: 0
+    position: absolute
+    top: 0
+    right: 0
+    width: 200vw
+
+  .section-banner-main__text
+    z-index: 2
+    position: relative
+    margin-top: 10vh
+    color: #fff
+
+  .section-banner-main__img
+    z-index: 1
+    position: relative
+    // rov
+    img
+      display: block
+      width: 100%
+
+@include tablet()
+  .section-banner-main
+    margin-top: $sizeHeader
+    padding: 0
+    height: calc(100vh - #{$sizeHeader})
+
+    .section-banner-main__img
+      overflow: visible
+      align-self: end
+      height: 70vh
+
+@media only screen and (max-width: 340px)
+  .section-banner-main
+    .index-banner__text
+      padding: 20px
+      h3
+        margin: 0 0 5px 0
+
+
+
 .section-graphics
+  z-index: 1
   padding: 60px 20vw
-  align-items: baseline
-  background-color: $colorLight
+
   .section-graphics__elem
     margin-bottom: 60px
     text-align: center
+    color: #fff
     img
       display: inline-block
-      width: 80%
+      width: 40%
       margin-bottom: 20px
     h3
       margin-bottom: 10px
-    p
 
-@include breakpoint($brMedium)
+@include tablet()
   .section-graphics
     padding: 100px 0
+
     .section-graphics__elem
       margin-bottom: 0
-      img
-        width: 70%
-      h3
-      p
+
+
+
+.wave-bar
+  z-index: 2
+  overflow: hidden
+  position: relative
+  left: -5px
+  top: 2px
+  width: 200vw
+  img
+    display: block
+
 
 
 .section-drone
-  padding: 60px 40px
-  background-color: $colorMain
-  background-position: right bottom
-  background-repeat: no-repeat
-  background-size: 70%
+  padding: 60px 20px
+  background-color: #fff
+
   .section-drone__text
-    margin-bottom: 170px
-    color: #fff
-    h3
-      margin-bottom: 20px
+    h2
+      font-size: 6.5vw
+      font-weight: 900
       span
-        font-size: 8vw
-    p
-      margin-bottom: 10px
-    .section-drone__imgs
+        font-size: 8.5vw
+    .section-drone__icons
       display: flex
+      flex-flow: column
       margin-top: 20px
       img
-        margin-right: 20px
-        height: 40px
+        width: 80%
 
-@include breakpoint($brMedium)
+  .section-drone__img
+    img
+      width: 100%
+
+@include tablet()
   .section-drone
-    padding: 80px 40px
+    padding: 160px 0
     background-size: 60%
+
     .section-drone__text
+      z-index: 2
+      position: relative
       overflow: visible
-      margin-bottom: 300px
-      h3
-        margin-bottom: 25px
+      h2
+        font-size: 2.275vw
         span
-          white-space: nowrap
-          font-size: 6vw
-      p
-        margin-bottom: 15px
-      .section-drone__imgs
+          font-size: 3.25vw
+      .section-drone__icons
+        flex-flow: row
+        margin-top: 50px
         img
-          margin-right: 30px
-          margin-top: 15px
-          height: 70px
+          width: 50%
+
+    .section-drone__img
+      z-index: 1
+      position: relative
+      overflow: visible
+      margin-top: 0
+      img
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        width: 120%
+
 
 
 .section-team
   background-color: $colorLight
-  padding: 50px
-  .section-team__text
-    display: flex
-    flex-flow: column
-    justify-content: start
-    padding: 0 10px
-    span
-      display: flex
-      justify-content: center
-      padding: 5px 0
-      background-color: #000
-      color: #fff
-      font-weight: bold
-      width: 100px
-      margin-bottom: 10px
-    h2
-    h3
-      margin-bottom: 10px
-      font-weight: normal
-    h4
-      margin-bottom: 40px
-      font-weight: normal
-      color: #828282
-    p
-      margin-bottom: 50px
-      max-width: 400px
-  .section-team__img
-    img
-      display: block
-      max-width: 100%
-      max-height: 400px
+  padding: 20px
 
-  .section-team__arrow
-    position: fixed
-    top: 50%
-    width: 50px
-    height: 50px
-    background-color: $colorSec
-    z-index: 100
-    transition: transform $tNormal cubic-bezier(.08,.54,0,1)
-    cursor: pointer
-    img
-      padding: 5px
-      height: 100%
-  .section-team__arrow--previous
-    left: 0
-    transform: translateY(-50%) translateX(-100%)
-  .section-team__arrow--next
-    right: 0
-    transform: translateY(-50%) translateX(100%)
-  .arrow--visible
-    transform: translateY(-50%) translateX(0)
+  .section-team__pop
+    padding: 40px
+    background-color: $colorMain
 
-@include breakpoint($brMedium)
-  .section-team
-    padding: 50px 150px
+    .section-team__img
+      justify-self: center
+      margin: 40px 0 20px 0
+      img
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        width: 50%
+
     .section-team__text
-      h2
-        font-size: 4vw
+      align-self: center
+      margin-bottom: 10px
+      color: #fff
+      text-align: center
+      h3
+        margin-bottom: 15px
+
+  @include tablet()
+    .section-team__pop
+      padding: 80px 0
+
+      .section-team__img
+        justify-self: center
+        margin: 0
+        img
+          width: 70%
+
+      .section-team__text
+        margin-bottom: 0
+
+  .section-team__slider
+    margin: 100px 0
+    padding: 0 30px
+
+    .section-team__text
+      padding: 0 10px
+      span
+        display: inline-block
+        padding: 5px 15px
+        background-color: $colorMain
+        color: #fff
+        font-weight: 600
+        margin-bottom: 10px
+      h1
+        //font-size: 6.5vw
+      h3
+        margin-bottom: 10px
+        font-weight: normal
+      h4
+        margin-bottom: 40px
+        font-weight: normal
+        color: #828282
+      p
+        margin-bottom: 50px
+        max-width: 400px
+
+    .section-team__img
+      position: relative
+      width: 100%
+      img
+        display: block
+        width: 100%
 
     .section-team__arrow
-      width: 100px
-      height: 100px
+      z-index: 100
+      position: fixed
+      top: 50%
+      width: 50px
+      height: 50px
+      background-color: $colorSec
+      transition: transform $tNormal cubic-bezier(.08,.54,0,1)
+      cursor: pointer
       img
-        transform: translateX(0)
-        transition: transform $tNormal cubic-bezier(.08,.54,0,1)
+        padding: 5px
+        height: 100%
+    .section-team__arrow--previous
+      left: 0
+      transform: translateY(-50%) translateX(-100%)
+    .section-team__arrow--next
+      right: 0
+      transform: translateY(-50%) translateX(100%)
+    .arrow--visible
+      transform: translateY(-50%) translateX(0)
 
-    .section-team__arrow--previous:hover
-      img
-        transform: translateX(-10px)
-    .section-team__arrow--next:hover
-      img
-        transform: translateX(10px)
+  @include tablet()
+    .section-team__slider
+      padding: 0
+      min-height: 400px
+      height: 40vh
+
+      .section-team__img
+        img
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 400px
+
+      .section-team__text
+        h1
+          font-size: 3vw
+
+      .section-team__arrow
+        z-index: 0
+        align-self: center
+        position: static
+        top: 0
+        width: 100%
+        height: auto
+        img
+          width: 100%
+          height: auto
+          transition: transform $tNormal cubic-bezier(.08,.54,0,1)
+      .section-team__arrow--previous
+        transform: translateY(0) translateX(0)
+      .section-team__arrow--next
+        transform: translateY(0) translateX(0)
+      .arrow--visible
+        transform: translateY(0) translateX(0)
+      .section-team__arrow--previous:hover
+        img
+          transform: translateX(-10px)
+      .section-team__arrow--next:hover
+        img
+          transform: translateX(10px)
+
+@include tablet()
+  .section-team
+    padding: 0
+
+    .section-team__text
+      margin-bottom: 0
+
 
 
 .section-divisions
-  background-color: $colorSec
+  background-color: $colorMain
+  padding: 0
+  margin-top: 80px
+
+  .section-graphics__elem
+    overflow: visible
+    p
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      width: 150%
+
+@include tablet()
+  .section-divisions
+    .section-graphics__elem
+      img
+        width: 80%
+
+
 
 .section-contact
-  display: flex
-  justify-content: center
+  padding: 40px 20px
   background-color: $colorMain
   color: #fff
-  padding: 50px
-  .section-contact__elem
-    h2
-      margin-bottom: 30px
-    h3
-      margin-bottom: 5px
-    p
+
+  .section-contact__newsletter
+    margin-bottom: 80px
+    h1
       margin-bottom: 20px
+    p
+      margin-bottom: 5px
+    form
+      margin-top: 15px
+      width: 100%
+      div
+        display: flex
+        justify-content: center
+        margin-bottom: 15px
+        input
+          flex: 1
+          border: none
+          margin-right: 15px
+          padding: 15px
+        button
+          border: none
+          padding: 15px
+          background-color: #1f9baa
+          color: #fff
+          font-weight: 600
+      p
+        display: block
+        font-size: 2.5vw
+        opacity: 0.45
+        padding: 5px
+        border: solid rgba(255,255,255,0.3) 2px
+
+
+
+  .section-contact__connections
+    h1
+      margin-bottom: 30px
     a
-      color: $colorSec
-      text-decoration: underline
+      color: #fff
     a:hover
       text-decoration: none
 
-    .section-contact__icons
-      margin-top: 15px
-      a
-        display: inline-block
-        margin-right: 20px
-        height: 40px
-        text-decoration: none
-        img
-          height: 100%
-          transform: scale(1)
+    .section-contact__elem
+      margin-bottom: 40px
+      h4
+        margin-bottom: 10px
+      .section-contact__tile
+        display: flex
+        align-items: center
+        img, a > img
+          display: block
+          margin-right: 15px
+          width: 30px
+        a
+          display: block
+        a > img
+          will-change: true
           transition: transform $tRapid
-      a:hover
-        img
-          transform: scale(1.2)
+        a:hover > img
+          transform: scale(0.9)
+        .section-contact__text
+          p
+            font-size: 4vw
+            span
+              font-size: 3vw
+
+@include tablet()
+  .section-contact
+    padding: 100px 0
+
+    .section-contact__newsletter
+      text-align: center
+      form
+        margin-top: 25px
+        div
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          width: 70%
+          input
+            flex: 1
+            padding: 15px
+          button
+            padding: 15px
+            transform: scale(1)
+            will-change: true
+            transition: transform $tRapid
+            cursor: pointer
+          button:hover
+            transform: scale(0.9)
+        p
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+          width: 70%
+          font-size: 0.75vw
+
+    .section-contact__connections
+      .section-contact__elem
+        height: 100px
+        .section-contact__tile
+          img
+            width: 40px
+          .section-contact__text
+            p
+              font-size: 1.2vw
+              span
+                font-size: 0.9vw
 

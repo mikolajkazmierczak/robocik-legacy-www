@@ -22,15 +22,23 @@ let is_menu_opened = menu.classList.contains(menu_opened_class);
 
 /* Team Section */
 
-let sectionTeam = document.querySelector('.section-team');
+let sectionTeam = document.querySelector(
+  '.section-team > .section-team__slider');
 
-let sectionTeamName    = document.querySelector('.section-team__text > h2');
-let sectionTeamRole    = document.querySelector('.section-team__text > h3');
-let sectionTeamContact = document.querySelector('.section-team__text > h4');
-let sectionTeamText    = document.querySelector('.section-team__text > p');
-let sectionTeamPhoto   = document.querySelector('.section-team__img > img');
+let sectionTeamName    = document.querySelector(
+  '.section-team__slider > .section-team__text > h1');
+let sectionTeamRole    = document.querySelector(
+  '.section-team__slider > .section-team__text > h3');
+let sectionTeamContact = document.querySelector(
+  '.section-team__slider > .section-team__text > h4');
+let sectionTeamText    = document.querySelector(
+  '.section-team__slider > .section-team__text > p');
+let sectionTeamPhoto   = document.querySelector(
+  '.section-team__slider > .section-team__img > img');
 
-let sectionTeamArrowPrevious = document.querySelector('.section-team__arrow--previous');
-let sectionTeamArrowNext     = document.querySelector('.section-team__arrow--next');
+let sectionTeamArrowPrevious = document.querySelector(
+  '.section-team__slider > .section-team__arrow--previous');
+let sectionTeamArrowNext     = document.querySelector(
+  '.section-team__slider > .section-team__arrow--next');
 
 let arrow_visible_class = 'arrow--visible';

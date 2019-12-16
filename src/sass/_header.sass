@@ -5,10 +5,8 @@ header
   overflow: hidden
   display: flex
   justify-content: space-between
-  //padding: 12px 12px
   height: $sizeHeader
   width: 100%
-  //background-color: $colorMain
   color: #fff
   z-index: 100
 
@@ -18,6 +16,7 @@ header
     background-color: $colorMain
     transform: translateY(-200%)
     transition: transform $tNormal cubic-bezier(.08,.54,0,1)
+
     .logo__link
       display: flex
       flex-wrap: nowrap
@@ -25,39 +24,40 @@ header
       height: 100%
       padding: 12px 12px
       text-decoration: none
+
       .logo__icon
         display: inline-block
         height: 100%
-        //transform: scale(1.2)
+
       .logo__title
         margin-left: 12px
         font-family: 'Jura', sans-serif
-        font-size: 28px
+        font-size: 24px
         color: #fff
+
   .logo--visible
     transform: translateY(0)
+
 
   .menu-button
     display: flex
     padding: 12px 12px
     height: 100%
     background-color: $colorMain
+
     .menu-button__icon
       display: none
       height: 100%
+
     .menu-button__icon--active
       display: block
 
-@include breakpoint($brMedium)
+@include tablet()
   header
     background-color: $colorMain
+
     .logo
       width: auto
-      //transform: translateY(0)
 
     .menu-button
       display: none
-
-//@include breakpoint($brBig)
-//  header
-//    padding: 12px 15%

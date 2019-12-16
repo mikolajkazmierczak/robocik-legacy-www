@@ -13,13 +13,14 @@
   <meta name="keywords"
         content="koło naukowe robocik, kn robocik, pwr diving crew, politechnika wrocławska, pwr, robot, roboty, robotyka, automatyka, ekologia, ekologiczne, nauka, naukowe, innowacja, innowacyjne">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 <body>
   <?php
 
-  $rootUrl = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/'; // Copy the absolute url from the browser
+//  $rootUrl = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/'; // Copy the absolute url from the browser
 //  $rootUrl = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/mikolaj/'; // For reedkalisz.pl/mikolaj
   $rootUrl = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/RobocikOldNew/'; // While in production
 
@@ -31,7 +32,7 @@
     <div class="logo">
       <a class="logo__link" href="<?php echo $rootUrl ?>">
         <img class="logo__icon" src="<?php echo $rootUrl . 'src/img/logo_white.svg' ?>">
-        <h1 class="logo__title">Robocik</h1>
+        <h1 class="logo__title">PWr Diving Crew</h1>
       </a>
     </div>
     <div class="menu-button">

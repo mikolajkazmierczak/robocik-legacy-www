@@ -12,9 +12,8 @@
 
     menu_item("#vision", "Wizja");
     menu_item("#project", "Projekt");
-//    menu_item("404", "PWr Diving Crew");
-    menu_item("#team", "Załoga");
     menu_item("#divisions", "Działy");
+    menu_item("#team", "Załoga");
     menu_item("#contact", "Kontakt");
     menu_item($rootUrl . 'pages/sponsors.php', "Partnerzy");
 

@@ -1,8 +1,9 @@
 *
   box-sizing: border-box
 body
+  overflow-x: hidden
   position: relative
-  background-color: $colorLight
+  background-color: $colorMain
   font-family: 'Raleway', sans-serif
 
 
@@ -15,74 +16,65 @@ h1, h2, h3, h4, h5, h6, p
 h1, h2, h3, h4, h5, h6
   font-family: "Montserrat", sans-serif
 
+h1
+  font-size: 7.5vw
+  font-weight: 900
+  span
+    font-size: 9.5vw
 h2
-  font-size: 11vw
+  font-size: 5vw
+  font-weight: 600
 h3
   font-size: 6vw
+  font-weight: 600
 h4
   font-size: 4vw
+  font-weight: 600
 p
   font-size: 4.5vw
+  font-weight: 400
 
-@include breakpoint($brMedium)
+@include tablet()
+  h1
+    font-size: 3.5vw
+    span
+      font-size: 5vw
   h2
-    font-size: 5.5vw
+    font-size: 2.5vw
   h3
-    font-size: 2vw
+    font-size: 1.7vw
   h4
     font-size: 1vw
   p
-    font-size: 1.5vw
+    font-size: 1.3vw
 
 
 /* Column System */
 
+@function col_all()
+  $result: ""
+  @for $start from 1 through 15
+    @for $width from 1 through 15
+      $result: $result+".col-"+#{$start}+"-"+#{$width}+","
+  @return $result
+
 .cols
-  display: flex
-  flex-flow: column
-  width: 100%
-  .col
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+  // NOTE: All possible .col-X-Y variations for 15 columns
+  //       Where X is grid-column-start and Y is span
+
+  #{col_all()}
+    grid-column-start: 1
+    grid-column-end: 16 // 15 columns
     overflow: hidden
-    width: 100%
+    //border-left: solid #0f0 3px
+    //border-right: solid #f0f 3px
 
-@function cols($amount)
-  @for i 
-
-@include breakpoint($brMedium)
-  .cols
-    flex-flow: row
-    justify-content: center
-    .col
-      width: 100%
-    .col--w-1
-      width: 8.33%
-    .col--w-2
-      width: 16.66%
-    .col--w-3
-      width: 24.99%
-    .col--w-4
-      width: 33.32%
-    .col--w-5
-      width: 41.65%
-    .col--w-6
-      width: 49.98%
-    .col--w-7
-      width: 58.31%
-    .col--w-8
-      width: 66.64%
-    .col--w-9
-      width: 74.97%
-    .col--w-10
-      width: 83.30%
-    .col--w-11
-      width: 91.63%
-    .col--w-12
-      width: 100%
-    .col--#{fuck(1)}
-      background-color: #f0f
-
-
-  .cols--test
-    background-color: #fff
-    border-right: solid 3px #f0f
-    height: 200px
+  @include tablet()
+    @for $start from 1 through 15
+      @for $width from 1 through 15
+        .col-#{$start}-#{$width}
+          grid-column-start: $start
+          grid-column-end: span $width

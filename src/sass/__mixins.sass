@@ -2,3 +2,19 @@
 @mixin breakpoint($size)
   @media only screen and (min-width: $size)
     @content
+
+@mixin phone()
+  @include breakpoint($brMedium)
+    @content
+
+@mixin tablet()
+  @include breakpoint($brMedium)
+    @content
+
+@mixin pc()
+  @include breakpoint($brMedium)
+    @content
+
+@mixin pc_4k()
+  @include breakpoint($brHuge)
+    @content

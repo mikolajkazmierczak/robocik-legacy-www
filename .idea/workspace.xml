@@ -2,11 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/rellax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/rellax.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_global.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/copyright.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/copyright.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/divisions/construction.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/divisions/construction.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/divisions/electronics.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/divisions/electronics.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/divisions/software.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/divisions/software.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/graphics/mission.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/graphics/mission.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/graphics/values.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/graphics/values.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/graphics/vision.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/graphics/vision.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/cables.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/mainpulator_hand.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/manipulator1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/motor1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/motor2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/side.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/side2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/side_alt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/side_cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/side_triangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/team.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/team_alt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/team_cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/rov_4_0/team_triangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/_global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/__core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/__mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/__var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__var.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
@@ -56,11 +93,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RobocikOldNew\dist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew" />
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew\layout" />
@@ -110,6 +150,10 @@
       <workItem from="1576074952013" duration="26000" />
       <workItem from="1576246987423" duration="3148000" />
       <workItem from="1576250149729" duration="1522000" />
+      <workItem from="1576264540575" duration="52000" />
+      <workItem from="1576264602802" duration="3693000" />
+      <workItem from="1576333785630" duration="21212000" />
+      <workItem from="1576421594468" duration="40559000" />
     </task>
     <servers />
   </component>
@@ -130,33 +174,42 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#File_Watchers" timestamp="1576250133048">
+    <state x="552" y="178" key="#File_Watchers" timestamp="1576264697597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="178" key="#File_Watchers/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264697597" />
     <state x="552" y="178" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1576250133048" />
-    <state x="412" y="204" key="EditFileWatcherDialog" timestamp="1576250131982">
+    <state x="412" y="204" key="EditFileWatcherDialog" timestamp="1576264682463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="412" y="204" key="EditFileWatcherDialog/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264682463" />
     <state x="412" y="204" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576250131982" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576250042275">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576264681327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264681327" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576250042275" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1576249051054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576249051054" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576250150462">
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576424875369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576250150462" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576334282921" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576424875369" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1576441124360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576441124360" />
     <state x="395" y="178" key="scopes" timestamp="1576250119345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="395" y="178" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1576250119345" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576249006120">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576434598589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576434598589" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576249006120" />
   </component>
 </project>
