@@ -16,7 +16,7 @@
 /* 2 Variables */
 /* Colors */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Jura:700|Montserrat:400,600,900|Raleway:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jura:700|Raleway:400,700,900&display=swap");
 /* Sizes */
 /* Transitions */
 /* Breakpoints */
@@ -33,64 +33,85 @@ body {
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   font-size: 7.5vw;
   font-weight: 900;
 }
-h1 span {
-  font-size: 9.5vw;
+
+h1.h1--huge {
+  font-size: 11.25vw;
+}
+h1.h1--huge span {
+  font-size: 15vw;
 }
 
 h2 {
-  font-size: 5vw;
-  font-weight: 600;
+  font-size: 6vw;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 6vw;
-  font-weight: 600;
+  font-size: 4.5vw;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 4vw;
-  font-weight: 600;
+  font-size: 3.375vw;
+  font-weight: 700;
 }
 
-p {
-  font-size: 4.5vw;
+h5 {
+  font-size: 2.5vw;
   font-weight: 400;
+}
+
+h6 {
+  font-size: 1.875vw;
+  font-weight: 400;
+}
+
+p, a {
+  font-size: 4.5vw;
 }
 
 @media only screen and (min-width: 780px) {
   h1 {
-    font-size: 3.5vw;
+    font-size: 2.25vw;
   }
-  h1 span {
-    font-size: 5vw;
+
+  h1.h1--huge {
+    font-size: 3.375vw;
+  }
+  h1.h1--huge span {
+    font-size: 4.5vw;
   }
 
   h2 {
-    font-size: 2.5vw;
-  }
-
-  h3 {
     font-size: 1.7vw;
   }
 
-  h4 {
-    font-size: 1vw;
+  h3 {
+    font-size: 1.3vw;
   }
 
-  p {
+  h4 {
+    font-size: 0.975vw;
+  }
+
+  h5 {
+    font-size: 0.7vw;
+  }
+
+  h6 {
+    font-size: 0.525vw;
+  }
+
+  p, a {
     font-size: 1.3vw;
   }
 }
@@ -1105,10 +1126,8 @@ menu .menu__list {
 }
 menu .menu__list .menu__item {
   margin-bottom: 20px;
-  font-size: 12vw;
   color: #fff;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 menu .menu__list .menu__item a {
   color: inherit;
@@ -1145,13 +1164,13 @@ menu #lang #pl img, menu #lang #en img {
     display: flex;
     align-items: center;
     margin: 0 0 0 10px;
-    font-size: 18px;
     font-weight: normal;
     transition: background-color 0.25s, color 0.25s;
   }
   menu .menu__list .menu__item a {
     padding: 10px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
   }
   menu .menu__list .menu__item:hover {
     color: #000;
@@ -1181,13 +1200,15 @@ menu #lang #pl img, menu #lang #en img {
 
 /* 6 Footer */
 footer {
-  padding: 10px;
+  padding: 8px;
   width: 100%;
   background-color: #000;
+  text-align: center;
+  color: #888;
+  letter-spacing: 1px;
 }
 footer h6 {
-  text-align: center;
-  color: #888888;
+  margin-bottom: 4px;
 }
 
 /* 7 Index - Landing Page */
@@ -1281,7 +1302,7 @@ section .section__text--project p {
   width: 40%;
   margin-bottom: 20px;
 }
-.section-graphics .section-graphics__elem h3 {
+.section-graphics .section-graphics__elem h2 {
   margin-bottom: 10px;
 }
 
@@ -1309,13 +1330,6 @@ section .section__text--project p {
   padding: 60px 20px;
   background-color: #fff;
 }
-.section-drone .section-drone__text h2 {
-  font-size: 6.5vw;
-  font-weight: 900;
-}
-.section-drone .section-drone__text h2 span {
-  font-size: 8.5vw;
-}
 .section-drone .section-drone__text .section-drone__icons {
   display: flex;
   flex-flow: column;
@@ -1337,12 +1351,6 @@ section .section__text--project p {
     z-index: 2;
     position: relative;
     overflow: visible;
-  }
-  .section-drone .section-drone__text h2 {
-    font-size: 2.275vw;
-  }
-  .section-drone .section-drone__text h2 span {
-    font-size: 3.25vw;
   }
   .section-drone .section-drone__text .section-drone__icons {
     flex-flow: row;
@@ -1389,7 +1397,7 @@ section .section__text--project p {
   color: #fff;
   text-align: center;
 }
-.section-team .section-team__pop .section-team__text h3 {
+.section-team .section-team__pop .section-team__text h1 {
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 780px) {
@@ -1414,21 +1422,19 @@ section .section__text--project p {
 .section-team .section-team__slider .section-team__text {
   padding: 0 10px;
 }
-.section-team .section-team__slider .section-team__text span {
+.section-team .section-team__slider .section-team__text h5 {
   display: inline-block;
   padding: 5px 15px;
   background-color: #132142;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .section-team .section-team__slider .section-team__text h3 {
   margin-bottom: 10px;
-  font-weight: normal;
 }
 .section-team .section-team__slider .section-team__text h4 {
   margin-bottom: 40px;
-  font-weight: normal;
   color: #828282;
 }
 .section-team .section-team__slider .section-team__text p {
@@ -1480,9 +1486,6 @@ section .section__text--project p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-  }
-  .section-team .section-team__slider .section-team__text h1 {
-    font-size: 3vw;
   }
   .section-team .section-team__slider .section-team__arrow {
     z-index: 0;
@@ -1576,11 +1579,9 @@ section .section__text--project p {
   padding: 15px;
   background-color: #1f9baa;
   color: #fff;
-  font-weight: 600;
 }
-.section-contact .section-contact__newsletter form p {
+.section-contact .section-contact__newsletter form h6 {
   display: block;
-  font-size: 2.5vw;
   opacity: 0.45;
   padding: 5px;
   border: solid rgba(255, 255, 255, 0.3) 2px;
@@ -1598,7 +1599,7 @@ section .section__text--project p {
   margin-bottom: 40px;
 }
 .section-contact .section-contact__connections .section-contact__elem h4 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .section-contact .section-contact__connections .section-contact__elem .section-contact__tile {
   display: flex;
@@ -1618,12 +1619,6 @@ section .section__text--project p {
 }
 .section-contact .section-contact__connections .section-contact__elem .section-contact__tile a:hover > img {
   transform: scale(0.9);
-}
-.section-contact .section-contact__connections .section-contact__elem .section-contact__tile .section-contact__text p {
-  font-size: 4vw;
-}
-.section-contact .section-contact__connections .section-contact__elem .section-contact__tile .section-contact__text p span {
-  font-size: 3vw;
 }
 
 @media only screen and (min-width: 780px) {
@@ -1649,32 +1644,24 @@ section .section__text--project p {
   .section-contact .section-contact__newsletter form div button {
     padding: 15px;
     transform: scale(1);
-    will-change: true;
     transition: transform 0.15s;
     cursor: pointer;
   }
   .section-contact .section-contact__newsletter form div button:hover {
     transform: scale(0.9);
   }
-  .section-contact .section-contact__newsletter form p {
+  .section-contact .section-contact__newsletter form h6 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     display: block;
     width: 70%;
-    font-size: 0.75vw;
   }
   .section-contact .section-contact__connections .section-contact__elem {
     height: 100px;
   }
   .section-contact .section-contact__connections .section-contact__elem .section-contact__tile img {
     width: 40px;
-  }
-  .section-contact .section-contact__connections .section-contact__elem .section-contact__tile .section-contact__text p {
-    font-size: 1.2vw;
-  }
-  .section-contact .section-contact__connections .section-contact__elem .section-contact__tile .section-contact__text p span {
-    font-size: 0.9vw;
   }
 }
 

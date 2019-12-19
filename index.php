@@ -6,7 +6,7 @@
            alt="Background waves">
       <div class="section-banner-main__text section__text--project col-2-7">
         <h2>Koło Naukowe</h2>
-        <h1><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
+        <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
         <p>Koło Naukowe<br>Automatyki i Robotyki „Robocik”<br>to organizacja studencka na<br>Politechnice Wrocławskiej.</p>
         <p>Cel ‒ zabawa nauką.<br>Konsekwencją ‒ innowacja.</p>
         <p>Studencki żywioł i<br>uczelniany profesjonalizm.</p>
@@ -25,19 +25,19 @@
       <div class="section-graphics__elem col-3-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/vision.png' ?>"
              alt="Vision icon">
-        <h3>Wizja</h3>
+        <h2>Wizja</h2>
         <p>Rozwój indywidualny<br>poprzez współdziałanie.</p>
       </div>
       <div class="section-graphics__elem col-7-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/mission.png' ?>"
              alt="Mission icon">
-        <h3>Misja</h3>
+        <h2>Misja</h2>
         <p>Podwyższać kompetencje<br>i równocześnie bawić.</p>
       </div>
       <div class="section-graphics__elem col-11-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/values.png' ?>"
              alt="Values icon">
-        <h3>Wartości</h3>
+        <h2>Wartości</h2>
         <p>Wizjonerstwo, kooperacja,<br>integracja, wiedza,<br>motywacja.</p>
       </div>
     </section>
@@ -67,8 +67,8 @@
   <section class="section-drone cols">
     <div class="scroll-anchor" id="project"></div>
     <div class="section-drone__text section__text--project col-3-6">
-      <h3>Pionierski projekt:</h3>
-      <h2><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h2>
+      <h2>Pionierski projekt:</h2>
+      <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
       <p>Inżynieria pojazdów podwodnych to niszowa,<br>lecz bardzo istotna gałąź nauki.</p>
       <p>Nasza organizacja zajmuje się budową<br>robotów pracujących w środowisku wodnym.</p>
       <p>Konstrukcje te mogą być używane do zadań<br>eksploracyjnych, ratowniczych oraz militarnych.</p>
@@ -99,7 +99,7 @@
                alt="Crew icon">
         </div>
         <div class="section-team__text col-7-7">
-          <h3>Bo najważniejsi są ludzie</h3>
+          <h1>Bo najważniejsi są ludzie</h1>
           <p>Jesteśmy ambitnymi studentami, którzy nie wiedzą co znaczy niemożliwe. W naszej organizacji każdy ma ściśle określoną rolę, jednakże nie tylko dzięki strukturze osiągamy sukcesy. Siła tkwi w indywidualizmie!</p>
         </div>
       </div>
@@ -109,25 +109,25 @@
         <div class="section-graphics__elem col-3-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/electronics_w.svg' ?>"
                alt="Electronics icon">
-          <h3>Elektronika</h3>
+          <h2>Elektronika</h2>
           <p>Zajmujemy się<br>projektowaniem układów<br>scalonych ‒ zasilaczy czy<br>sterowników silników,<br>a także programowaniem<br>mikrokontrolerów.</p>
         </div>
         <div class="section-graphics__elem col-6-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software_w.svg' ?>"
                alt="Software icon">
-          <h3>Software</h3>
+          <h2>Software</h2>
           <p>Programiści wykorzystują<br>języki wysokiego poziomu<br>do tworzenia sztucznej<br>inteligencji, analizy obrazu,<br>transmisji danych,<br>algorytmów sterowania.</p>
         </div>
         <div class="section-graphics__elem col-9-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/construction_w.svg' ?>"
                alt="Construction icon">
-          <h3>Konstrukcja</h3>
+          <h2>Konstrukcja</h2>
           <p>Wykonujemy projekty<br>w systemach<br>SolidWorks oraz Inventor.<br>Zgłębiamy nowoczesne<br>technologie wytwarzania<br>w praktyce.</p>
         </div>
         <div class="section-graphics__elem col-12-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software_w.svg' ?>"
                alt="Marketing icon">
-          <h3>Marketing</h3>
+          <h2>Marketing</h2>
           <p>Robimy zasięgi i hajs.<br>Jesteśmy najlepsi.<br>Nie wiem co tu napisać.<br>Potem coś się wymyśli.<br>W końcu od tego jesteśmy.</p>
         </div>
       </section>
@@ -139,8 +139,8 @@
              alt="Arrow pointing left (next member)">
       </div>
       <div class="section-team__text col-3-6">
-        <span>#RobocikPeople</span>
-        <h1></h1>
+        <h5>#RobocikPeople</h5>
+        <h1 class="h1--huge"></h1>
         <h3></h3>
         <h4></h4>
         <p></p>
@@ -170,7 +170,7 @@
           <input type="text" placeholder="Wpisz tu swój e-mail" name="username">
           <button name="submit"><span>Wyślij</span></button>
         </div>
-        <p>Klikając "Wyślij" wyrażam zgodę na przesyłanie na mój adres e-mail informacji o nowościach na temat organizacji pochodzących od PWr Diving Crew, ul.Łukasiewicza 7/9, bud.B-9 p.40, 50-371 Wrocław. Wiem, że w każdej chwili będę mógł wycofać zgodę.</p>
+        <h6>Klikając "Wyślij" wyrażam zgodę na przesyłanie na mój adres e-mail informacji o nowościach na temat organizacji pochodzących od PWr Diving Crew, ul.Łukasiewicza 7/9, bud.B-9 p.40, 50-371 Wrocław. Wiem, że w każdej chwili będę mógł wycofać zgodę.</h6>
       </form>
     </div>
 
@@ -185,7 +185,7 @@
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/location.png' ?>"
                    alt="Location icon">
               <div class="section-contact__text">
-                <p><span>Politechnika Wrocławska</span></p>
+                <h5>Politechnika Wrocławska</h5>
                 <p>Łukasiewicza 7/9, bud. B-9, p.40</p>
                 <p>50-371 Wrocław</p>
               </div>
@@ -211,7 +211,7 @@
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/phone.png' ?>"
                    alt="Phone icon">
               <div class="section-contact__text">
-                <p><span>Wiceprezes ds. Organizacyjnych i Promocjii<span></span></p>
+                <h5>Wiceprezes ds. Organizacyjnych i Promocjii</h5>
                 <p>Ola Maziarz : +48 371 046 078</p>
               </div>
             </div>
