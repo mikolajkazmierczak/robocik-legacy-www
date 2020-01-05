@@ -23,22 +23,23 @@ let is_menu_opened = menu.classList.contains(menu_opened_class);
 /* Team Section */
 
 let sectionTeam = document.querySelector(
-  '.section-team > .section-team__slider');
+  '.section-team__slider');
 
 let sectionTeamName    = document.querySelector(
-  '.section-team__slider > .section-team__text > h1');
+  '.slider__name');
 let sectionTeamRole    = document.querySelector(
-  '.section-team__slider > .section-team__text > h3');
+  '.slider__role');
 let sectionTeamContact = document.querySelector(
-  '.section-team__slider > .section-team__text > h4');
+  '.slider__contact');
 let sectionTeamText    = document.querySelector(
-  '.section-team__slider > .section-team__text > p');
+  '.slider__text');
+
 let sectionTeamPhoto   = document.querySelector(
-  '.section-team__slider > .section-team__img > img');
+  '.slider__photo > img');
 
 let sectionTeamArrowPrevious = document.querySelector(
-  '.section-team__slider > .section-team__arrow--previous');
+  '.slider__arrow--previous');
 let sectionTeamArrowNext     = document.querySelector(
-  '.section-team__slider > .section-team__arrow--next');
+  '.slider__arrow--next');
 
-let arrow_visible_class = 'arrow--visible';
+let arrow_visible_class = 'slider__arrow--visible';

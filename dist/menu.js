@@ -5,7 +5,7 @@ function OpenMenu() {
   menuImgOpen.classList.remove(menu_button_active_class);
   menuImgClose.classList.add(menu_button_active_class);
   is_menu_opened = menu.classList.contains(menu_opened_class);
-  CheckLogo();
+  CheckLogo(); // show (Mobile) or do nothing (PC) - header.js
 }
 
 function CloseMenu() {
@@ -13,7 +13,7 @@ function CloseMenu() {
   menuImgOpen.classList.add(menu_button_active_class);
   menuImgClose.classList.remove(menu_button_active_class);
   is_menu_opened = menu.classList.contains(menu_opened_class);
-  CheckLogo();
+  CheckLogo(); // hide (Mobile) or do nothing (PC) - header.js
 }
 
 menuButton.onclick = function () {

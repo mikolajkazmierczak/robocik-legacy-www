@@ -2,16 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/smooth-scroll.polyfills.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/idanchors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/newsletter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RobocikOldNew.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RobocikOldNew.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_global.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/header.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/menu.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/rellax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/rellax.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/rellax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/rellax.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/team.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/team.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/copyright.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/copyright.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/rellax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/rellax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/center.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/destroy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/directions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/horizontal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/percentage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/range.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/speed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/wrapper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/_global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/smoothscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/team.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/__core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/__var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__var.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +82,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -44,6 +98,7 @@
   </component>
   <component name="NamedScopeManager">
     <scope name="Sass" pattern="file:style.sass||file[RobocikOldNew]:src/sass//*" />
+    <scope name="Babel" pattern="file[RobocikOldNew]:src/js//*" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TZg017HkTydlDYI1amsbAsfekV" />
@@ -60,19 +115,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RobocikOldNew\dist" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RobocikOldNew\lib" />
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew" />
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew\layout" />
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew\src" />
       <recent name="C:\Users\Mikołaj\PhpstormProjects\RobocikOldNew\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RobocikOldNew\dist" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,6 +197,8 @@
       <workItem from="1576421594468" duration="40559000" />
       <workItem from="1576623554625" duration="2961000" />
       <workItem from="1576696569120" duration="5447000" />
+      <workItem from="1577970194638" duration="22302000" />
+      <workItem from="1578053735303" duration="26820000" />
     </task>
     <servers />
   </component>
@@ -165,20 +224,32 @@
     </state>
     <state x="552" y="178" key="#File_Watchers/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264697597" />
     <state x="552" y="178" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1576250133048" />
+    <state x="712" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577990703784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577990703784" />
+    <state x="740" y="224" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1577993295149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="224" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577993295149" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577990681858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577990681858" />
     <state x="707" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1576710038453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576710038453" />
-    <state x="412" y="204" key="EditFileWatcherDialog" timestamp="1576264682463">
+    <state x="412" y="204" width="1096" height="666" key="EditFileWatcherDialog" timestamp="1577998319716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="412" y="204" key="EditFileWatcherDialog/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264682463" />
-    <state x="412" y="204" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576250131982" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576264681327">
+    <state x="412" y="204" width="1096" height="666" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577998319716" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577993307519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576264681327" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576250042275" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577993307519" />
     <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1576712491799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -195,27 +266,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576712491799" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1576249051054">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1577998321960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576249051054" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576700380114">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577998321960" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578080443716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576700380114" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576424875369" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1576441124360">
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578080443716" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1577980559002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576441124360" />
-    <state x="395" y="178" key="scopes" timestamp="1576250119345">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577980559002" />
+    <state x="395" y="178" key="scopes" timestamp="1577993334177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="395" y="178" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1576250119345" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576434598589">
+    <state x="395" y="178" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1577993334177" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577999421604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576434598589" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576249006120" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577999421604" />
   </component>
 </project>

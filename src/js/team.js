@@ -1,6 +1,8 @@
+"use strict";
 
 /* Arrows */
 
+// find an element's offset from top of the screen
 function currentOffsetTop(el) {
   let currentTop = 0;
   if (el.offsetParent) {
@@ -22,6 +24,7 @@ function HideArrows() {
   sectionTeamArrowNext.classList.remove(arrow_visible_class);
 }
 
+// check how far the user scrolled and show or hide arrows
 function CheckTeamArrows() {
   let teamOffsetTop = currentOffsetTop(sectionTeam);
   let teamHeight    = sectionTeam.offsetHeight;
@@ -29,8 +32,6 @@ function CheckTeamArrows() {
   let windowOffsetTop = window.pageYOffset;
   let windowHeight    = window.innerHeight;
   let windowWidth     = window.innerWidth;
-
-  let headerHeight = header.offsetHeight;
 
   // firstHook: when scrolled into view (+ additional fraction of height)
   let firstHook;
@@ -67,11 +68,13 @@ document.addEventListener('resize', function() {
 
 /* Load People JSON */
 
-let data;
-let data_team_len;
+let data; // full data from the sever
+let data_team_len; // amount of team members
 
 function LoadPeopleJSON() {
   return new Promise((resolve, reject) => {
+
+    // AJAX call for JSON data from the server
 
     let xhr = new XMLHttpRequest();
     xhr.responseType = 'json'
@@ -93,6 +96,7 @@ function LoadPeopleJSON() {
 
 
 function PreloadTeamPhotos() {
+  // preload photos to browser memory for faster loading when switching between people
   for(let i = 0; i < data_team_len; i++) {
     new Image().src = rootUrl + data.team[i].photo;
   }
@@ -101,17 +105,29 @@ function PreloadTeamPhotos() {
 
 /* Toggle Person */
 
-let person_i = 0; // First person in the JSON array
+let person_i = 0; // first person in the JSON array
 
+// pseudo setter for HTML text elements
 function PersonInsertText(el, string) {
   if(string == '') {
-    el.innerHTML = '';
+
+    el.innerHTML = '<span style="opacity:0; cursor:default">Co ty tu robisz potężny czarodzieju</span>';
+
   } else if(el == sectionTeamText) {
-    el.innerHTML = '"' + string + '"';
+
+    if(string.length > 130) {
+      el.innerHTML = 'ERROR: THE TEXT WAS TOO LONG';
+    } else {
+      el.innerHTML = '"' + string + '"';
+    }
+
   } else {
+
     el.innerHTML = string;
+
   }
 }
+
 function LoadPerson() {
   let person = data.team[person_i];
   PersonInsertText(sectionTeamName,    person.name);
@@ -123,6 +139,7 @@ function LoadPerson() {
 
 function LoadPreviousPerson() {
   if((person_i - 1) < 0) {
+    // if out of range then take the last person
     person_i = data_team_len - 1;
   } else {
     person_i -= 1;
@@ -132,6 +149,7 @@ function LoadPreviousPerson() {
 
 function LoadNextPerson() {
   if( (person_i + 1) == data_team_len ) {
+    // if out of range then take the first person
     person_i = 0;
   } else {
     person_i += 1;
@@ -151,6 +169,24 @@ sectionTeamArrowNext.addEventListener('click', function() {
 window.addEventListener('load', function() {
   LoadPeopleJSON().then(res => {
     PreloadTeamPhotos();
-    LoadPerson(); // First from JSON array will be loaded
+    LoadPerson(); // first from JSON array will be loaded
   });
+
+  pb_run(LoadNextPerson); // run the progressbar from progressbar.js
+});
+
+
+/* ProgressBar */
+
+sectionTeamArrowPrevious.addEventListener('mouseover', function() {
+  pb_pause();
+});
+sectionTeamArrowNext.addEventListener('mouseover', function() {
+  pb_pause();
+});
+sectionTeamArrowPrevious.addEventListener('mouseout', function() {
+  pb_run(LoadNextPerson);
+});
+sectionTeamArrowNext.addEventListener('mouseout', function() {
+  pb_run(LoadNextPerson);
 });

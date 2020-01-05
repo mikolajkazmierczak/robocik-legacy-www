@@ -11,17 +11,17 @@
         <p>Cel ‒ zabawa nauką.<br>Konsekwencją ‒ innowacja.</p>
         <p>Studencki żywioł i<br>uczelniany profesjonalizm.</p>
       </div>
-      <div class="rellax section-banner-main__img col-9-6"
-           data-rellax-vertical-scroll-axis="xy"
-           data-rellax-horizontal-speed="2"
-           data-rellax-vertical-speed="-5">
+      <div class="lax section-banner-main__img col-9-6"
+           data-lax-translate-y_small="0 0, vh 200 | speed=0.75"
+           data-lax-translate-x_small="0 0, vh -250 | speed=0.75"
+           data-lax-translate-y_medium="0 0, vh 600 | speed=0.5"
+           data-lax-translate-x_medium="0 0, vh -500 | speed=0.5">
         <img src="<?php echo $rootUrl . 'src/img/rov_4_0/rov_underwater.png' ?>"
              alt="Drone scanning underwater">
       </div>
     </section>
 
-    <section class="section-graphics cols">
-      <div class="scroll-anchor" id="vision"></div>
+    <section id="vision" class="section-graphics cols">
       <div class="section-graphics__elem col-3-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/vision.png' ?>"
              alt="Vision icon">
@@ -44,28 +44,14 @@
 
     <div class="wave-bar">
       <img class="lax" src="<?php echo $rootUrl . 'src/img/wave.svg' ?>"
-           data-lax-preset_mobile="rightToLeft-0.25"
-           data-lax-preset_tablet="rightToLeft-0.5"
+           data-lax-preset_small="rightToLeft-0.25"
+           data-lax-preset_medium="rightToLeft-0.5"
            alt="Wave image">
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script>
-      window.onload = function() {
-        lax.setup({
-          breakpoints: { mobile: 0, tablet: 780 }
-        }) // init
-        const updateLax = () => {
-          lax.update(window.scrollY)
-          window.requestAnimationFrame(updateLax)
-        }
-        window.requestAnimationFrame(updateLax)
-      }
-    </script>
   </div>
 
 
-  <section class="section-drone cols">
-    <div class="scroll-anchor" id="project"></div>
+  <section id="project" class="section-drone cols">
     <div class="section-drone__text section__text--project col-3-6">
       <h2>Pionierski projekt:</h2>
       <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
@@ -89,9 +75,7 @@
 
 
 
-  <section class="section-team cols">
-    <div class="scroll-anchor" id="team"></div>
-
+  <section id="team" class="section-team cols">
     <div class="section-team__pop col-2-13">
       <div class="cols">
         <div class="section-team__img col-3-3">
@@ -105,7 +89,6 @@
       </div>
 
       <section class="section-graphics section-divisions cols">
-        <div class="scroll-anchor" id="divisions"></div>
         <div class="section-graphics__elem col-3-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/electronics_w.svg' ?>"
                alt="Electronics icon">
@@ -134,22 +117,25 @@
     </div>
 
     <div class="section-team__slider col-2-13 cols">
-      <div class="section-team__arrow section-team__arrow--previous col-1-1">
+      <div class="slider__arrow slider__arrow--previous col-1-1">
         <img src="<?php echo $rootUrl . 'src/img/icons/team/previous_white.svg' ?>"
              alt="Arrow pointing left (next member)">
       </div>
-      <div class="section-team__text col-3-6">
-        <h5>#RobocikPeople</h5>
-        <h1 class="h1--huge"></h1>
-        <h3></h3>
-        <h4></h4>
-        <p></p>
+      <div class="slider__info col-3-6">
+        <div class="slider__tag">
+          <div class="slider__progress-bar col-1-15"></div>
+          <h4>#RobocikPeople</h4>
+        </div>
+        <h1 class="slider__name h1--huge"></h1>
+        <h3 class="slider__role"></h3>
+        <h4 class="slider__contact"></h4>
+        <p  class="slider__text"></p>
       </div>
-      <div class="section-team__img col-10-4">
+      <div class="slider__photo col-10-4">
         <img src=""
              alt="Crew member photo">
       </div>
-      <div class="section-team__arrow section-team__arrow--next col-15-1">
+      <div class="slider__arrow slider__arrow--next col-15-1">
         <img src="<?php echo $rootUrl . 'src/img/icons/team/next_white.svg' ?>"
              alt="Arrow pointing right (previous member)">
       </div>
@@ -158,23 +144,31 @@
 
 
   <section class="section-contact cols">
-    <div class="scroll-anchor" id="contact"></div>
-
     <div class="section-contact__newsletter col-5-7">
       <h1>Newsletter</h1>
       <p>To my w skondensowanej paczce.</p>
       <p>Jeden mail miesięczenie.</p>
       <p>Bo nikt nie lubi spamu.</p>
       <form action="" method="post">
-        <div>
-          <input type="text" placeholder="Wpisz tu swój e-mail" name="username">
-          <button name="submit"><span>Wyślij</span></button>
+        <div class="form__input">
+          <input class="form__input__mail" type="text" placeholder="Wpisz tu swój e-mail" name="username">
+          <button class="form__input__submit" name="submit"><span>Wyślij</span></button>
         </div>
-        <h6>Klikając "Wyślij" wyrażam zgodę na przesyłanie na mój adres e-mail informacji o nowościach na temat organizacji pochodzących od PWr Diving Crew, ul.Łukasiewicza 7/9, bud.B-9 p.40, 50-371 Wrocław. Wiem, że w każdej chwili będę mógł wycofać zgodę.</h6>
+        <div class="form__consent">
+          <div class="form__consent__checkbox pretty p-default p-smooth">
+            <input type="checkbox"/>
+            <div class="state">
+              <label></label>
+            </div>
+          </div>
+          <div class="form__consent__text">
+            <h4>Zaznaczając przycisk po lewej wyrażasz zgodę na przesyłanie na Twój adres e-mail informacji o nowościach na temat organizacji pochodzących od PWr Diving Crew, ul.Łukasiewicza 7/9, bud.B-9 p.40, 50-371 Wrocław. Zgodę w każdej chwili możesz <a href="">wycofać</a>.</h4>
+          </div>
+        </div>
       </form>
     </div>
 
-    <div class="section-contact__connections col-5-8">
+    <div id="contact" class="section-contact__connections col-5-8">
       <h1>Kontakt</h1>
       <div class="cols">
 
@@ -197,8 +191,8 @@
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/email.png' ?>"
                    alt="Email icon">
               <div class="section-contact__text">
-                <a href="mailto:robocikb9@gmail.com">robocikb9@gmail.com</a>
-                <a href="mailto:robocikb9marketing@gmail.com">robocikb9marketing@gmail.com</a>
+                <p><a href="mailto:robocikb9@gmail.com">robocikb9@gmail.com</a></p>
+                <p><a href="mailto:robocikb9marketing@gmail.com">robocikb9marketing@gmail.com</a></p>
               </div>
             </div>
           </div>

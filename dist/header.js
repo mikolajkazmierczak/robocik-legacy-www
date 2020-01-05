@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; // check if scrolled more then one viewport height (effectively the first section)
 
 function CheckOffset() {
   var windowOffset = window.pageYOffset; // how many pixels were scrolled
@@ -26,7 +26,9 @@ function CheckLogo() {
     } else {
       HideLogo();
     }
-  }
+  } // TODO: When changed to PC mode when Menu was opened in Mobile - the Logo is always shown.
+  // TODO: Fix: Close the menu when entering PC mode from Mobile mode.
+
 }
 
 document.addEventListener('scroll', function () {

@@ -11,18 +11,19 @@ header
   z-index: 100
 
   .logo
+    padding-left: 20px
     height: 100%
     width: 100%
     background-color: $colorMain
     transform: translateY(-200%)
-    transition: transform $tNormal cubic-bezier(.08,.54,0,1)
+    transition: transform $tSlow cubic-bezier(.08,.54,0,1)
 
     .logo__link
       display: flex
       flex-wrap: nowrap
       align-items: center
       height: 100%
-      padding: 12px 12px
+      padding: 12px 0
       text-decoration: none
 
       .logo__icon
@@ -54,9 +55,11 @@ header
 
 @include tablet()
   header
+    padding: 0 6.66%
     background-color: $colorMain
 
     .logo
+      padding-left: 0
       width: auto
 
     .menu-button
