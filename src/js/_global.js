@@ -22,24 +22,27 @@ let is_menu_opened = menu.classList.contains(menu_opened_class);
 
 /* Team Section */
 
-let sectionTeam = document.querySelector(
+let slider = document.querySelector(
   '.section-team__slider');
 
-let sectionTeamName    = document.querySelector(
+let sliderEl = document.querySelectorAll(
+  '.slider__el');
+
+let sliderName    = document.querySelectorAll(
   '.slider__name');
-let sectionTeamRole    = document.querySelector(
+let sliderRole    = document.querySelectorAll(
   '.slider__role');
-let sectionTeamContact = document.querySelector(
+let sliderContact = document.querySelectorAll(
   '.slider__contact');
-let sectionTeamText    = document.querySelector(
+let sliderText    = document.querySelectorAll(
   '.slider__text');
 
-let sectionTeamPhoto   = document.querySelector(
-  '.slider__photo > img');
+let sliderImg = document.querySelectorAll(
+  '.slider__img');
 
-let sectionTeamArrowPrevious = document.querySelector(
+let sliderArrowPrevious = document.querySelector(
   '.slider__arrow--previous');
-let sectionTeamArrowNext     = document.querySelector(
+let sliderArrowNext     = document.querySelector(
   '.slider__arrow--next');
 
 let arrow_visible_class = 'slider__arrow--visible';

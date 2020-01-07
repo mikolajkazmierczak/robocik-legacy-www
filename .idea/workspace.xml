@@ -2,69 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/lax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/smooth-scroll.polyfills.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/idanchors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/progressbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RobocikOldNew.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RobocikOldNew.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/team_arrows.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_global.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_global.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/header.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/header.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/menu.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/rellax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/rellax.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/rellax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/rellax.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/smoothscroll.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/team.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/team.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/team.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/copyright.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/copyright.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/rellax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/rellax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/center.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/destroy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/directions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/horizontal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/percentage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/range.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/speed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/style.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rellax/tests/wrapper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/_global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/_global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/smoothscroll.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/team.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/__core.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__core.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/__var.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/__var.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/_index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_index.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_menu.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +68,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -198,7 +148,8 @@
       <workItem from="1576623554625" duration="2961000" />
       <workItem from="1576696569120" duration="5447000" />
       <workItem from="1577970194638" duration="22302000" />
-      <workItem from="1578053735303" duration="26820000" />
+      <workItem from="1578053735303" duration="29076000" />
+      <workItem from="1578240471990" duration="21575000" />
     </task>
     <servers />
   </component>
@@ -232,6 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="224" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577993295149" />
+    <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1578257054496">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1578257054496" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577990681858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,28 +221,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576712491799" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1577998321960">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1578257067190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1578257067190" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577998321960" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578080443716">
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578244472346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576700380114" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1578244472346" />
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578080443716" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1577980559002">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1578247761689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576441124360" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1578247761689" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577980559002" />
     <state x="395" y="178" key="scopes" timestamp="1577993334177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="395" y="178" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1577993334177" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577999421604">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578277432268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1080.-340.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1576434598589" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1578277432268" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577999421604" />
   </component>
 </project>

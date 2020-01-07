@@ -126,13 +126,28 @@
           <div class="slider__progress-bar col-1-15"></div>
           <h4>#RobocikPeople</h4>
         </div>
-        <h1 class="slider__name h1--huge"></h1>
-        <h3 class="slider__role"></h3>
-        <h4 class="slider__contact"></h4>
-        <p  class="slider__text"></p>
+        <h1 class="slider__el slider__el--previous slider__name h1--huge"></h1>
+        <h1 class="slider__el slider__el--main     slider__name h1--huge"></h1>
+        <h1 class="slider__el slider__el--next     slider__name h1--huge"></h1>
+        <h3 class="slider__el slider__el--previous slider__role"></h3>
+        <h3 class="slider__el slider__el--main     slider__role"></h3>
+        <h3 class="slider__el slider__el--next     slider__role"></h3>
+        <h4 class="slider__el slider__el--previous slider__contact"></h4>
+        <h4 class="slider__el slider__el--main     slider__contact"></h4>
+        <h4 class="slider__el slider__el--next     slider__contact"></h4>
+        <p  class="slider__el slider__el--previous slider__text"></p>
+        <p  class="slider__el slider__el--main     slider__text"></p>
+        <p  class="slider__el slider__el--next     slider__text"></p>
       </div>
       <div class="slider__photo col-10-4">
-        <img src=""
+        <img class="slider__el slider__el--previous slider__img"
+             src=""
+             alt="Crew member photo">
+        <img class="slider__el slider__el--main     slider__img"
+             src=""
+             alt="Crew member photo">
+        <img class="slider__el slider__el--next     slider__img"
+             src=""
              alt="Crew member photo">
       </div>
       <div class="slider__arrow slider__arrow--next col-15-1">

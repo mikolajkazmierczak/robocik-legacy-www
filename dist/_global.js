@@ -14,13 +14,14 @@ var menu_button_active_class = 'menu-button__icon--active';
 var is_menu_opened = menu.classList.contains(menu_opened_class);
 /* Team Section */
 
-var sectionTeam = document.querySelector('.section-team__slider');
-var sectionTeamName = document.querySelector('.slider__name');
-var sectionTeamRole = document.querySelector('.slider__role');
-var sectionTeamContact = document.querySelector('.slider__contact');
-var sectionTeamText = document.querySelector('.slider__text');
-var sectionTeamPhoto = document.querySelector('.slider__photo > img');
-var sectionTeamArrowPrevious = document.querySelector('.slider__arrow--previous');
-var sectionTeamArrowNext = document.querySelector('.slider__arrow--next');
+var slider = document.querySelector('.section-team__slider');
+var sliderEl = document.querySelectorAll('.slider__el');
+var sliderName = document.querySelectorAll('.slider__name');
+var sliderRole = document.querySelectorAll('.slider__role');
+var sliderContact = document.querySelectorAll('.slider__contact');
+var sliderText = document.querySelectorAll('.slider__text');
+var sliderImg = document.querySelectorAll('.slider__img');
+var sliderArrowPrevious = document.querySelector('.slider__arrow--previous');
+var sliderArrowNext = document.querySelector('.slider__arrow--next');
 var arrow_visible_class = 'slider__arrow--visible';
 //# sourceMappingURL=_global.js.map

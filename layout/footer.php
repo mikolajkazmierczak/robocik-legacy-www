@@ -35,6 +35,7 @@
   <script src="dist/menu.js?v=2"></script>
 
   <script src="dist/progressbar.js"></script>
+  <script src="dist/team_arrows.js"></script>
   <script src="dist/team.js?v=2"></script>
 
   <script src="dist/newsletter.js"></script>

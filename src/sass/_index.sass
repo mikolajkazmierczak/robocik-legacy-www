@@ -215,8 +215,19 @@ section
     margin: 100px 0
     padding: 0 30px
 
+    .slider__el
+      will-change: transform
+      transform: translateX(0)
+      transition: transform 400ms
+    .slider__el--no-transition
+      transition-duration: 0ms
+    .slider__el--right
+      transform: translateX(100%)
+    .slider__el--left
+      transform: translateX(-100%)
+
     .slider__info
-      padding: 0 10px
+      margin: 0 10px
       .slider__tag
         position: relative
         display: inline-block
@@ -250,8 +261,7 @@ section
     .slider__photo
       position: relative
       width: 100%
-      background-color: #e9e9e9
-      img
+      .slider__img
         display: block
         width: 100%
 
@@ -283,11 +293,10 @@ section
       height: 40vh
 
       .slider__photo
-        img
-          position: absolute
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%)
+        display: flex
+        justify-content: center
+        align-items: center
+        .slider__img
           width: 400px
 
       .slider__arrow

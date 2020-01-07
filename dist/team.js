@@ -1,84 +1,19 @@
-"use strict";
-/* Arrows */
-// find an element's offset from top of the screen
+'use strict';
+/* Load Team Data from src/team.json */
 
-function currentOffsetTop(el) {
-  var currentTop = 0;
+var teamData; // full data from the sever
 
-  if (el.offsetParent) {
-    do {
-      currentTop += el.offsetTop;
-    } while (el = el.offsetParent);
+var teamData_len; // amount of team members
 
-    return currentTop;
-  }
-
-  return undefined;
-}
-
-function ShowArrows() {
-  sectionTeamArrowPrevious.classList.add(arrow_visible_class);
-  sectionTeamArrowNext.classList.add(arrow_visible_class);
-}
-
-function HideArrows() {
-  sectionTeamArrowPrevious.classList.remove(arrow_visible_class);
-  sectionTeamArrowNext.classList.remove(arrow_visible_class);
-} // check how far the user scrolled and show or hide arrows
-
-
-function CheckTeamArrows() {
-  var teamOffsetTop = currentOffsetTop(sectionTeam);
-  var teamHeight = sectionTeam.offsetHeight;
-  var windowOffsetTop = window.pageYOffset;
-  var windowHeight = window.innerHeight;
-  var windowWidth = window.innerWidth; // firstHook: when scrolled into view (+ additional fraction of height)
-
-  var firstHook; // secondHook: when scrolled out of the view (- additional fraction of height)
-
-  var secondHook;
-
-  if (windowWidth < 780) {
-    // mobile
-    firstHook = teamOffsetTop - windowHeight + teamHeight / 4 * 3; // top 3/4 of section must be visible
-
-    secondHook = teamOffsetTop + teamHeight / 4; // top 1/4 must be hidden
-  } else {
-    // pc (additional windowHeight due to the banner getting fixed in place)
-    firstHook = teamOffsetTop + teamHeight / 4 * 3; // top 3/4 of section must be visible
-
-    secondHook = teamOffsetTop + windowHeight; // top must at least start hiding
-  } // when view is between both hooks
-
-
-  if (windowOffsetTop > firstHook && windowOffsetTop < secondHook) {
-    ShowArrows();
-  } else {
-    HideArrows();
-  }
-}
-
-document.addEventListener('scroll', function () {
-  CheckTeamArrows();
-});
-document.addEventListener('resize', function () {
-  CheckTeamArrows();
-});
-/* Load People JSON */
-
-var data; // full data from the sever
-
-var data_team_len; // amount of team members
-
-function LoadPeopleJSON() {
+function LoadDataJSON() {
   return new Promise(function (resolve, reject) {
     // AJAX call for JSON data from the server
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.addEventListener('load', function () {
       if (xhr.status === 200) {
-        data = xhr.response;
-        data_team_len = data.team.length;
+        teamData = xhr.response;
+        teamData_len = teamData.team.length;
         resolve();
       }
     });
@@ -89,87 +24,151 @@ function LoadPeopleJSON() {
 
 function PreloadTeamPhotos() {
   // preload photos to browser memory for faster loading when switching between people
-  for (var i = 0; i < data_team_len; i++) {
-    new Image().src = rootUrl + data.team[i].photo;
+  for (var i = 0; i < teamData_len; i++) {
+    new Image().src = rootUrl + teamData.team[i].photo;
   }
 }
-/* Toggle Person */
+
+var sliderElPrevious;
+var sliderElMain;
+var sliderElNext;
+
+function sliderGetCurrentElements() {
+  sliderElPrevious = document.querySelectorAll('.slider__el--previous');
+  sliderElMain = document.querySelectorAll('.slider__el--main');
+  sliderElNext = document.querySelectorAll('.slider__el--next');
+}
+
+function sliderRepositionShifted(el) {
+  sliderGetCurrentElements();
+  el.forEach(function (el) {
+    // turn off transitions
+    el.classList.add('slider__el--no-transition'); // change reposition to left or right
+
+    if (el.classList.contains('slider__el--previous')) {
+      el.style.transform = el.style.transform = 'translateX(100%)';
+    } else if (el.classList.contains('slider__el--next')) {
+      el.style.transform = el.style.transform = 'translateX(-100%)';
+    } // turn on transitions
 
 
-var person_i = 0; // first person in the JSON array
-// pseudo setter for HTML text elements
+    el.offsetHeight; // force a reflow
 
-function PersonInsertText(el, string) {
-  if (string == '') {
+    el.classList.remove('slider__el--no-transition');
+  });
+}
+
+function sliderSlide(direction) {
+  // before moving               [-100%] | [  0  ] | [ 100% ]
+  // direction previous                  | [  0  ] | [ 100% ] [ 200% ]
+  // direction next      [-200%] [-100%] | [  0  ] |
+  sliderEl.forEach(function (el) {
+    var translateX = el.style.translate;
+
+    if (direction === 'previous') {
+      el.style.transform = 'translateX(' + translateX + 100 + '%)';
+    } else if (direction === 'next') {
+      el.style.transform = 'translateX(' + translateX + 100 + '%)';
+    }
+  });
+} // pseudo setter for HTML text elements
+
+
+function sliderMemberInsertData(data, el) {
+  if (data === '') {
+    // if no data
     el.innerHTML = '<span style="opacity:0; cursor:default">Co ty tu robisz potężny czarodzieju</span>';
-  } else if (el == sectionTeamText) {
-    if (string.length > 130) {
-      el.innerHTML = 'ERROR: THE TEXT WAS TOO LONG';
+  } else {
+    if (el === sliderText) {
+      if (string.length > 130) {
+        el.innerHTML = 'ERROR: THE TEXT WAS TOO LONG';
+      } else {
+        el.innerHTML = '"' + data + '"';
+      }
+    } else if (el === sliderImg) {
+      el.src = data;
     } else {
-      el.innerHTML = '"' + string + '"';
+      el.innerHTML = data;
+    }
+  }
+}
+
+function sliderLoadMember(el_type) {
+  var member = teamData.team[member_i];
+
+  if (el_type === 'previous') {}
+
+  sliderMemberInsertData(member.name, sliderName);
+  sliderMemberInsertData(member.role, sliderRole);
+  sliderMemberInsertData(member.contact, sliderContact);
+  sliderMemberInsertData(member.text, sliderText);
+  sliderMemberInsertData(member.photo, sliderImg);
+} // TODO: its fucked up because you have to choose elements with
+//  both classes: ex. slider__name and slider__el--previous
+
+
+var member_i = 0; // first person in the JSON array
+
+function sliderChooseMember(direction) {
+  if (direction === 'previous') {
+    if (member_i - 1 < 0) {
+      // if out of range then take the last person
+      member_i = teamData_len - 1;
+    } else {
+      member_i -= 1;
     }
   } else {
-    el.innerHTML = string;
+    if (member_i + 1 === teamData_len) {
+      // if out of range then take the first person
+      member_i = 0;
+    } else {
+      member_i += 1;
+    }
   }
 }
 
-function LoadPerson() {
-  var person = data.team[person_i];
-  PersonInsertText(sectionTeamName, person.name);
-  PersonInsertText(sectionTeamRole, person.role);
-  PersonInsertText(sectionTeamContact, person.contact);
-  PersonInsertText(sectionTeamText, person.text);
-  sectionTeamPhoto.src = person.photo;
+function sliderPrevious() {
+  sliderSlide('previous');
+  sliderRepositionShifted(sliderElNext);
+  sliderChooseMember('previous');
+  sliderReloadShiftedMember(); // change position of shifted el
+  // load person into shifted el
+  // change positional classes
 }
 
-function LoadPreviousPerson() {
-  if (person_i - 1 < 0) {
-    // if out of range then take the last person
-    person_i = data_team_len - 1;
-  } else {
-    person_i -= 1;
-  }
-
-  LoadPerson();
+function sliderNext() {
+  sliderSlide('next');
+  sliderRepositionShifted(sliderElPrevious);
+  sliderRepositionShifted(sliderElNext);
+  sliderReloadShiftedMember();
 }
 
-function LoadNextPerson() {
-  if (person_i + 1 == data_team_len) {
-    // if out of range then take the first person
-    person_i = 0;
-  } else {
-    person_i += 1;
-  }
-
-  LoadPerson();
-}
-
-sectionTeamArrowPrevious.addEventListener('click', function () {
-  LoadPreviousPerson();
+sliderArrowPrevious.addEventListener('click', function () {
+  sliderPrevious();
 });
-sectionTeamArrowNext.addEventListener('click', function () {
-  LoadNextPerson();
+sliderArrowNext.addEventListener('click', function () {
+  sliderNext();
 }); // When site loads, load first person
 
 window.addEventListener('load', function () {
-  LoadPeopleJSON().then(function (res) {
+  LoadDataJSON().then(function (res) {
     PreloadTeamPhotos();
-    LoadPerson(); // first from JSON array will be loaded
+    sliderNext(); // first from JSON array will be loaded
   });
-  pb_run(LoadNextPerson); // run the progressbar from progressbar.js
+  pb_run(sliderNext); // run the progressbar from progressbar.js
 });
 /* ProgressBar */
 
-sectionTeamArrowPrevious.addEventListener('mouseover', function () {
+sliderArrowPrevious.addEventListener('mouseover', function () {
   pb_pause();
 });
-sectionTeamArrowNext.addEventListener('mouseover', function () {
+sliderArrowNext.addEventListener('mouseover', function () {
   pb_pause();
 });
-sectionTeamArrowPrevious.addEventListener('mouseout', function () {
-  pb_run(LoadNextPerson);
+sliderArrowPrevious.addEventListener('mouseout', function () {
+  pb_run(sliderNext);
 });
-sectionTeamArrowNext.addEventListener('mouseout', function () {
-  pb_run(LoadNextPerson);
+sliderArrowNext.addEventListener('mouseout', function () {
+  pb_run(sliderNext);
 });
 //# sourceMappingURL=team.js.map
