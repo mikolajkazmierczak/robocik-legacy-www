@@ -1439,6 +1439,11 @@ section .section__text--project p {
 .section-team .section-team__slider .slider__el--transparent {
   opacity: 0;
 }
+.section-team .section-team__slider .slider__el--invisible {
+  opacity: 0;
+  color: #fff;
+  transition: none;
+}
 .section-team .section-team__slider .slider__el--right {
   transform: translateX(-100%);
 }

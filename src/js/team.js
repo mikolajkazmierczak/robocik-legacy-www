@@ -71,14 +71,19 @@ function sliderChooseMember(member) {
 function sliderCheckInfo(data, el) {
   if(data === '') { // no data
 
+    if (el === sliderContact || el === sliderRole) {
+      data = 'Co ty tu robisz czarodzieju?';
+      el.classList.add('slider__el--invisible');
+    }
+
     if(el === sliderImg) {
       sliderImg.style.display = 'none';
     }
 
   } else {
 
-    if(el === sliderImg) {
-      sliderImg.style.display = 'block';
+    if (el === sliderContact || el === sliderRole) {
+      el.classList.remove('slider__el--invisible');
     }
 
     if (el === sliderText) {
@@ -87,6 +92,10 @@ function sliderCheckInfo(data, el) {
       } else {
         data = '"' + data + '"';
       }
+    }
+
+    if(el === sliderImg) {
+      sliderImg.style.display = 'block';
     }
 
   }
@@ -106,10 +115,10 @@ function sliderDisplayInfo(time, member_i) {
 
     let dataLen = data.length;
     let timer = time / dataLen;
-    for(let i = 1; i <= dataLen; i++) {
+    for(let i = 0; i <= dataLen; i++) {
       setTimeout(()=>{
         el.innerHTML = data.slice(0, i);
-      }, timer*i)
+      }, timer*i);
     }
   });
 
@@ -123,7 +132,7 @@ function sliderClearInfo(time) {
     for(let i = 1; i <= elLen; i++) {
       setTimeout(()=>{
         el.innerHTML = el.innerHTML.slice(0, elLen-i);
-      }, timer*i)
+      }, timer*i);
     }
   });
 }

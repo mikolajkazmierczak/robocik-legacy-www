@@ -61,12 +61,17 @@ function sliderChooseMember(member) {
 function sliderCheckInfo(data, el) {
   if (data === '') {
     // no data
+    if (el === sliderContact || el === sliderRole) {
+      data = 'Co ty tu robisz czarodzieju?';
+      el.classList.add('slider__el--invisible');
+    }
+
     if (el === sliderImg) {
       sliderImg.style.display = 'none';
     }
   } else {
-    if (el === sliderImg) {
-      sliderImg.style.display = 'block';
+    if (el === sliderContact || el === sliderRole) {
+      el.classList.remove('slider__el--invisible');
     }
 
     if (el === sliderText) {
@@ -75,6 +80,10 @@ function sliderCheckInfo(data, el) {
       } else {
         data = '"' + data + '"';
       }
+    }
+
+    if (el === sliderImg) {
+      sliderImg.style.display = 'block';
     }
   }
 
@@ -111,7 +120,7 @@ function sliderDisplayInfo(time, member_i) {
       }, timer * i);
     };
 
-    for (var i = 1; i <= dataLen; i++) {
+    for (var i = 0; i <= dataLen; i++) {
       _loop(i);
     }
   });
