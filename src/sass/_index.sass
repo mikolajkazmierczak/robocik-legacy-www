@@ -29,12 +29,12 @@ section
   width: 100%
   background-color: $colorMain
 
-  .section-banner-main__bg
-    z-index: 0
-    position: absolute
-    top: 0
-    right: 0
-    width: 200vw
+  .section-banner-main__wavesbg
+    img
+      position: absolute
+      top: 0
+      right: 0
+      width: 180vw
 
   .section-banner-main__text
     z-index: 2
@@ -55,6 +55,10 @@ section
     margin-top: $sizeHeader
     padding: 0
     height: calc(100vh - #{$sizeHeader})
+
+    .section-banner-main__wavesbg
+      img
+        width: 100vw
 
     .section-banner-main__img
       overflow: visible
@@ -110,17 +114,17 @@ section
   padding: 60px 20px
   background-color: #fff
 
-  .section-drone__text
-    .section-drone__icons
-      display: flex
-      flex-flow: column
-      margin-top: 20px
-      img
-        width: 80%
-
   .section-drone__img
     img
       width: 100%
+
+  .section-drone__icons
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 20px
+    img
+      height: 50px
 
 @include tablet()
   .section-drone
@@ -131,11 +135,6 @@ section
       z-index: 2
       position: relative
       overflow: visible
-      .section-drone__icons
-        flex-flow: row
-        margin-top: 50px
-        img
-          width: 50%
 
     .section-drone__img
       z-index: 1
@@ -144,10 +143,13 @@ section
       margin-top: 0
       img
         position: absolute
-        top: 50%
-        left: 50%
-        transform: translateX(-50%) translateY(calc(-50% - 10%))
-        width: 180%
+        top: 0
+        width: 100%
+
+    .section-drone__icons
+      margin-top: 50px
+      img
+        height: 60px
 
 
 
@@ -210,20 +212,16 @@ section
         img
           width: 80%
 
-
   .section-team__slider
     margin: 100px 0
     padding: 0 30px
 
     .slider__el
       will-change: transform
-      transform: translateX(0)
-      transition: transform 400ms
-    .slider__el--no-transition
-      transition-duration: 0ms
+      transition: opacity $tRapid, transform $tRapid
+    .slider__el--transparent
+      opacity: 0
     .slider__el--right
-      transform: translateX(100%)
-    .slider__el--left
       transform: translateX(-100%)
 
     .slider__info
@@ -297,6 +295,8 @@ section
         justify-content: center
         align-items: center
         .slider__img
+          position: absolute
+          top: 0
           width: 400px
 
       .slider__arrow
@@ -463,4 +463,3 @@ section
         .section-contact__tile
           img
             width: 40px
-

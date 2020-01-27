@@ -25,19 +25,16 @@ let is_menu_opened = menu.classList.contains(menu_opened_class);
 let slider = document.querySelector(
   '.section-team__slider');
 
-let sliderEl = document.querySelectorAll(
-  '.slider__el');
-
-let sliderName    = document.querySelectorAll(
+let sliderName    = document.querySelector(
   '.slider__name');
-let sliderRole    = document.querySelectorAll(
+let sliderRole    = document.querySelector(
   '.slider__role');
-let sliderContact = document.querySelectorAll(
+let sliderContact = document.querySelector(
   '.slider__contact');
-let sliderText    = document.querySelectorAll(
+let sliderText    = document.querySelector(
   '.slider__text');
 
-let sliderImg = document.querySelectorAll(
+let sliderImg = document.querySelector(
   '.slider__img');
 
 let sliderArrowPrevious = document.querySelector(

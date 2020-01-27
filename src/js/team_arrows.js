@@ -2,14 +2,8 @@
 
 // find an element's offset from top of the screen
 function currentOffsetTop(el) {
-  let currentTop = 0;
-  if (el.offsetParent) {
-    do {
-      currentTop += el.offsetTop;
-    } while (el === el.offsetParent);
-    return currentTop;
-  }
-  return undefined;
+  let viewportOffset = el.getBoundingClientRect();
+  return viewportOffset.top;
 }
 
 function ShowArrows() {
@@ -24,30 +18,16 @@ function HideArrows() {
 
 // check how far the user scrolled and show or hide arrows
 function CheckTeamArrows() {
-  let teamOffsetTop = currentOffsetTop(slider);
-  let teamHeight    = slider.offsetHeight;
+  let sliderOffsetTop = currentOffsetTop(slider);
+  let sliderHeight    = slider.offsetHeight;
 
-  let windowOffsetTop = window.pageYOffset;
-  let windowHeight    = window.innerHeight;
-  let windowWidth     = window.innerWidth;
-
-  // firstHook: when scrolled into view (+ additional fraction of height)
-  let firstHook;
-  // secondHook: when scrolled out of the view (- additional fraction of height)
-  let secondHook;
-
-  if(windowWidth < 780) {
-    // mobile
-    firstHook  = teamOffsetTop - windowHeight + (teamHeight/4)*3; // top 3/4 of section must be visible
-    secondHook = teamOffsetTop                + (teamHeight/4);   // top 1/4 must be hidden
-  } else {
-    // pc (additional windowHeight due to the banner getting fixed in place)
-    firstHook  = teamOffsetTop                + (teamHeight/4)*3; // top 3/4 of section must be visible
-    secondHook = teamOffsetTop + windowHeight;                    // top must at least start hiding
-  }
+  // firstHook: when (1/2 of top of section) scrolled into view
+  let firstHook  = sliderOffsetTop < (sliderHeight/2);
+  // secondHook: when (1/3 of top of section) scrolled out of the view
+  let secondHook = sliderOffsetTop > -(sliderHeight/3);
 
   // when view is between both hooks
-  if( (windowOffsetTop > firstHook) && (windowOffsetTop < secondHook) ) {
+  if(firstHook && secondHook) {
     ShowArrows();
   } else {
     HideArrows();

@@ -1,6 +1,6 @@
 <!--  </div> --><!-- .site-wrapper -->
 
-  <script src="lib/lax.min.js"></script>
+  <script src="src/lib/lax.min.js"></script>
   <script>
     window.onload = function() {
       lax.setup({
@@ -18,10 +18,10 @@
     });
   </script>
 
-  <script src="dist/idanchors.js"></script>
-  <script src="lib/smooth-scroll.polyfills.min.js"></script>
+  <script src="dist/idanchors.js?v=1"></script>
+  <script src="src/lib/smooth-scroll.polyfills.min.js"></script>
   <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
+    let scroll = new SmoothScroll('a[href*="#"]', {
       speed: 500,
       speedAsDuration: true,
       offset: 75,
@@ -29,16 +29,20 @@
     });
   </script>
 
-  <script src="dist/_global.js?v=2"></script>
+  <script src="src/lib/anime.min.js"></script>
+  <script src="dist/wavesbg.js?v=1"></script>
 
-  <script src="dist/header.js?v=2"></script>
-  <script src="dist/menu.js?v=2"></script>
 
-  <script src="dist/progressbar.js"></script>
-  <script src="dist/team_arrows.js"></script>
-  <script src="dist/team.js?v=2"></script>
+  <script src="dist/_global.js?v=3"></script>
 
-  <script src="dist/newsletter.js"></script>
+  <script src="dist/header.js?v=3"></script>
+  <script src="dist/menu.js?v=3"></script>
+
+  <script src="dist/progressbar.js?v=1"></script>
+  <script src="dist/team_arrows.js?v=1"></script>
+  <script src="dist/team.js?v=3"></script>
+
+  <script src="dist/newsletter.js?v=1"></script>
 
 </body>
 

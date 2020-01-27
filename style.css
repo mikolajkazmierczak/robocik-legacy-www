@@ -1240,12 +1240,11 @@ section .section__text--project p {
   width: 100%;
   background-color: #132142;
 }
-.section-banner-main .section-banner-main__bg {
-  z-index: 0;
+.section-banner-main .section-banner-main__wavesbg img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 200vw;
+  width: 180vw;
 }
 .section-banner-main .section-banner-main__text {
   z-index: 2;
@@ -1267,6 +1266,9 @@ section .section__text--project p {
     margin-top: 55px;
     padding: 0;
     height: calc(100vh - 55px);
+  }
+  .section-banner-main .section-banner-main__wavesbg img {
+    width: 100vw;
   }
   .section-banner-main .section-banner-main__img {
     overflow: visible;
@@ -1324,16 +1326,17 @@ section .section__text--project p {
   padding: 60px 20px;
   background-color: #fff;
 }
-.section-drone .section-drone__text .section-drone__icons {
-  display: flex;
-  flex-flow: column;
-  margin-top: 20px;
-}
-.section-drone .section-drone__text .section-drone__icons img {
-  width: 80%;
-}
 .section-drone .section-drone__img img {
   width: 100%;
+}
+.section-drone .section-drone__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.section-drone .section-drone__icons img {
+  height: 50px;
 }
 
 @media only screen and (min-width: 780px) {
@@ -1346,13 +1349,6 @@ section .section__text--project p {
     position: relative;
     overflow: visible;
   }
-  .section-drone .section-drone__text .section-drone__icons {
-    flex-flow: row;
-    margin-top: 50px;
-  }
-  .section-drone .section-drone__text .section-drone__icons img {
-    width: 50%;
-  }
   .section-drone .section-drone__img {
     z-index: 1;
     position: relative;
@@ -1361,10 +1357,14 @@ section .section__text--project p {
   }
   .section-drone .section-drone__img img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(calc(-50% - 10%));
-    width: 180%;
+    top: 0;
+    width: 100%;
+  }
+  .section-drone .section-drone__icons {
+    margin-top: 50px;
+  }
+  .section-drone .section-drone__icons img {
+    height: 60px;
   }
 }
 .section-team {
@@ -1434,16 +1434,12 @@ section .section__text--project p {
 }
 .section-team .section-team__slider .slider__el {
   will-change: transform;
-  transform: translateX(0);
-  transition: transform 400ms;
+  transition: opacity 0.15s, transform 0.15s;
 }
-.section-team .section-team__slider .slider__el--no-transition {
-  transition-duration: 0ms;
+.section-team .section-team__slider .slider__el--transparent {
+  opacity: 0;
 }
 .section-team .section-team__slider .slider__el--right {
-  transform: translateX(100%);
-}
-.section-team .section-team__slider .slider__el--left {
   transform: translateX(-100%);
 }
 .section-team .section-team__slider .slider__info {
@@ -1529,6 +1525,8 @@ section .section__text--project p {
     align-items: center;
   }
   .section-team .section-team__slider .slider__photo .slider__img {
+    position: absolute;
+    top: 0;
     width: 400px;
   }
   .section-team .section-team__slider .slider__arrow {

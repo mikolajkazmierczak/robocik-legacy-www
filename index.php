@@ -2,8 +2,21 @@
 
   <div class="banner-wrapper">
     <section class="section-banner-main cols">
-      <img class="section-banner-main__bg" src="<?php echo $rootUrl . 'src/img/waves_bg.svg' ?>"
-           alt="Background waves">
+      <div class="section-banner-main__wavesbg">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_1.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_2.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_3.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_4.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_5.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_6.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_7.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_8.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_9.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_10.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_11.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_12.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_13.svg' ?>">
+      </div>
       <div class="section-banner-main__text section__text--project col-2-7">
         <h2>Koło Naukowe</h2>
         <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
@@ -58,18 +71,34 @@
       <p>Inżynieria pojazdów podwodnych to niszowa,<br>lecz bardzo istotna gałąź nauki.</p>
       <p>Nasza organizacja zajmuje się budową<br>robotów pracujących w środowisku wodnym.</p>
       <p>Konstrukcje te mogą być używane do zadań<br>eksploracyjnych, ratowniczych oraz militarnych.</p>
-      <div class="section-drone__icons">
-        <img src="<?php echo $rootUrl . 'src/img/icons/tech/auv_inside_1.png' ?>"
-             alt="Icons of: manipulator (0.5kh weight, 360deg), even a 100m underwater, Nvidia Xavier">
-        <img src="<?php echo $rootUrl . 'src/img/icons/tech/auv_inside_2.png' ?>"
-             alt="Icons of: weight 37kg, hears sounds, 4 HD cameras, Xsens">
-        <img src="<?php echo $rootUrl . 'src/img/icons/tech/auv_inside_3.png' ?>"
-             alt="Icons of: 8 engines - 3kW each, 6 torpedes, location">
-      </div>
     </div>
     <div class="section-drone__img col-9-5">
-      <img src="<?php echo $rootUrl . 'src/img/rov_4_0/auv.png' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/rov_4_0/auv.jpg' ?>"
            alt="AUV 3D render">
+    </div>
+    <div class="section-drone__icons col-3-11">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_load.svg' ?>"
+           alt="InsideAUV: Even 0.5kg of load">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_axes.svg' ?>"
+           alt="InsideAUV: 6 axes of movement">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_underwater.svg' ?>"
+           alt="InsideAUV: Even 100m underwater">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_xavier.svg' ?>"
+           alt="InsideAUV: Nvidia Xavier">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_weight.svg' ?>"
+           alt="InsideAUV: 37kg of weight">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_sound.svg' ?>"
+           alt="InsideAUV: Sound recognition">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_cameras.svg' ?>"
+           alt="InsideAUV: Four HD cameras">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_xsens.svg' ?>"
+           alt="InsideAUV: Xsens">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_engines.svg' ?>"
+           alt="InsideAUV: Eight engines 3kW each">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_torpedes.svg' ?>"
+           alt="InsideAUV: Six torpedes">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_radar.svg' ?>"
+           alt="InsideAUV: Radar">
     </div>
   </section>
 
@@ -90,25 +119,25 @@
 
       <section class="section-graphics section-divisions cols">
         <div class="section-graphics__elem col-3-2">
-          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/electronics_w.svg' ?>"
+          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/electronics.svg' ?>"
                alt="Electronics icon">
           <h2>Elektronika</h2>
           <p>Zajmujemy się<br>projektowaniem układów<br>scalonych ‒ zasilaczy czy<br>sterowników silników,<br>a także programowaniem<br>mikrokontrolerów.</p>
         </div>
         <div class="section-graphics__elem col-6-2">
-          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software_w.svg' ?>"
+          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software.svg' ?>"
                alt="Software icon">
           <h2>Software</h2>
           <p>Programiści wykorzystują<br>języki wysokiego poziomu<br>do tworzenia sztucznej<br>inteligencji, analizy obrazu,<br>transmisji danych,<br>algorytmów sterowania.</p>
         </div>
         <div class="section-graphics__elem col-9-2">
-          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/construction_w.svg' ?>"
+          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/construction.svg' ?>"
                alt="Construction icon">
           <h2>Konstrukcja</h2>
           <p>Wykonujemy projekty<br>w systemach<br>SolidWorks oraz Inventor.<br>Zgłębiamy nowoczesne<br>technologie wytwarzania<br>w praktyce.</p>
         </div>
         <div class="section-graphics__elem col-12-2">
-          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software_w.svg' ?>"
+          <img src="<?php echo $rootUrl . 'src/img/icons/divisions/marketing.svg' ?>"
                alt="Marketing icon">
           <h2>Marketing</h2>
           <p>Robimy zasięgi i hajs.<br>Jesteśmy najlepsi.<br>Nie wiem co tu napisać.<br>Potem coś się wymyśli.<br>W końcu od tego jesteśmy.</p>
@@ -126,27 +155,13 @@
           <div class="slider__progress-bar col-1-15"></div>
           <h4>#RobocikPeople</h4>
         </div>
-        <h1 class="slider__el slider__el--previous slider__name h1--huge"></h1>
-        <h1 class="slider__el slider__el--main     slider__name h1--huge"></h1>
-        <h1 class="slider__el slider__el--next     slider__name h1--huge"></h1>
-        <h3 class="slider__el slider__el--previous slider__role"></h3>
-        <h3 class="slider__el slider__el--main     slider__role"></h3>
-        <h3 class="slider__el slider__el--next     slider__role"></h3>
-        <h4 class="slider__el slider__el--previous slider__contact"></h4>
-        <h4 class="slider__el slider__el--main     slider__contact"></h4>
-        <h4 class="slider__el slider__el--next     slider__contact"></h4>
-        <p  class="slider__el slider__el--previous slider__text"></p>
-        <p  class="slider__el slider__el--main     slider__text"></p>
-        <p  class="slider__el slider__el--next     slider__text"></p>
+        <h1 class="slider__el slider__name h1--huge"></h1>
+        <h3 class="slider__el slider__role"></h3>
+        <h4 class="slider__el slider__contact"></h4>
+        <p  class="slider__el slider__text"></p>
       </div>
       <div class="slider__photo col-10-4">
-        <img class="slider__el slider__el--previous slider__img"
-             src=""
-             alt="Crew member photo">
-        <img class="slider__el slider__el--main     slider__img"
-             src=""
-             alt="Crew member photo">
-        <img class="slider__el slider__el--next     slider__img"
+        <img class="slider__el slider__img"
              src=""
              alt="Crew member photo">
       </div>
