@@ -1,0 +1,72 @@
+.popup
+  position: fixed
+  z-index: 10
+  top: 0
+  width: 100%
+  height: 100vh
+  transition: none
+  transition-duration: $tFast
+  transform: translateY(-100%)
+  .popup__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: #000
+    opacity: 0
+    transition: opacity $tFast
+  .popup__main
+    overflow: auto
+    position: relative
+    margin: 20px
+    background-color: #fff
+    opacity: 0
+    transform: scale(0.9)
+    transition: opacity $tFast, transform $tFast
+    .popup__content
+      padding: 0 20px 20px 20px
+    .popup__close
+      position: absolute
+      position: -webkit-sticky
+      position: sticky // acts like relative and fixed
+      top: 0
+      right: 0
+      margin-left: auto
+      padding: 12px
+      height: $sizeHeader
+      width: $sizeHeader
+      transition: background-color $tFast
+      cursor: pointer
+    .popup__close:hover
+      background-color: rgba(136, 136, 136, 0.1)
+
+    iframe
+      border: none
+      width: 100%
+      height: 100%
+
+.popup--flexible
+  .popup__main
+    margin: auto 20px
+
+
+@include tablet()
+  .popup
+    top: $sizeHeader
+    width: 100%
+    height: calc(100vh - #{$sizeHeader})
+    .popup__main
+      margin: calc(100vw/16) 0
+      .popup__content
+        padding: 0 $sizeHeader $sizeHeader $sizeHeader
+
+  .popup--flexible
+    .popup__main
+      margin: auto
+
+
+.popup--visible
+  .popup__bg
+    opacity: 0.5
+  .popup__main
+    opacity: 1
+    transform: scale(1)

@@ -1,44 +1,414 @@
 {"team":[
+
   {
-    "name":"Adam Szwedor",
-    "role":"Członek Działu XXX",
-    "contact":"test@mail.pl",
-    "text":"Denerwuje mnie własna niewiedza.",
-    "photo":"src/img/team/Adam_Szwedor.jpg"
+  "name":"Jakub Chmielewski",
+  "role":"Lider projektu ROV",
+  "contact":"kchmielewski707@gmail.com",
+  "text":"Nie ma problemów, są wyzwania.",
+  "photo":"src/img/team/Jakub_Chmielewski.jpg"
   },
+
+
   {
-    "name":"Aleksandra Maziarz",
-    "role":"Członek Działu XXX",
-    "contact":"test@mail.pl",
-    "text":"Do the best you can until you know better. Then when you know better, do better.",
-    "photo":"src/img/team/Aleksandra_Maziarz.png"
+  "name":"Wiktor Bożek",
+  "role":"Członek Działu Elektroniki",
+  "contact":"wiktor.bozek@wp.pl",
+  "text":"Szczęście to dobra książka i wygodny fotel",
+  "photo":"src/img/team/Wiktor_Bozek.jpg"
   },
+
   {
-    "name":"Damian Brzoza",
-    "role":"Członek Działu XXX",
-    "contact":"test@mail.pl",
-    "text":"Żeby zrealizować swoje zamiary potrzebna jest przede wszystkim ambicja, a później talent, wiedza i w końcu szczęście.",
-    "photo":"src/img/team/Damian_Brzoza.jpg"
+  "name":"Anna Gybej",
+  "role":"Członek Działu Elektroniki",
+  "contact":"ctm@op.pl",
+  "text":"Powiedz mi, to zapomnę. Naucz mnie, to może zapamiętam. Zaangażuj mnie, to się nauczę.",
+  "photo":"src/img/team/Anna_Gybej.jpg"
   },
+
   {
-    "name":"Jacek Ziemba",
-    "role":"Opiekun Koła",
-    "contact":"test@mail.pl",
-    "text":"Żeby zrealizować swoje zamiary potrzebna jest przede wszystkim ambicja, a później talent, wiedza i w końcu szczęście.",
-    "photo":"src/img/team/Jacek_Ziemba.jpg"
+  "name":"Paweł Owczarek",
+  "role":"Specjalista ds. Elektroniki i Formalności",
+  "contact":"powczarek1997@gmail.com",
+  "text":"Sprawy trudne rozwiązujemy w kwadrans, rzeczy niemożliwe w mniej niż godzinę",
+  "photo":"src/img/team/Pawel_Owczarek.jpg"
   },
+
   {
-    "name":"Kacper Krej",
-    "role":"Członek Działu XXX",
-    "contact":"test@mail.pl",
-    "text":"",
-    "photo":"src/img/team/Kacper_Krej.jpg"
+  "name":"Emilia Szymańska",
+  "role":"Członkini Działu Elektroniki",
+  "contact":"emiliaszym@gmail.com",
+  "text":"Gdyby szafa miała sznurek, to by była windą.",
+  "photo":"src/img/team/Emilia_Szymanska.jpg"
   },
+
   {
-    "name":"Łukasz Dworzak",
-    "role":"Członek Działu XXX",
-    "contact":"",
-    "text":"Potężna wichura łamiąc duże drzewa, trzciną zaledwie tylko kołysze.",
-    "photo":"src/img/team/Lukasz_Dworzak.jpg"
+  "name":"Michał Uznański",
+  "role":"Robocik-Elektronik",
+  "contact":"michaluznanskijolo@gmail.com",
+  "text":"Nauka to czary, które naprawdę działają.",
+  "photo":"src/img/team/Michal_Uznanski.jpg"
+  },
+
+  {
+  "name":"Mateusz Walkiewicz",
+  "role":"Prawa ręka lidera elektroniki",
+  "contact":"walkiewicz125@gmail.com",
+  "text":"Czuję się jak ktoś pobity od środka na śmierć, nie jak ktoś żywy, ale jak nie - trup.",
+  "photo":"src/img/team/Mateusz_Walkiewicz.jpg"
+  },
+
+  {
+  "name":"Piotr Zieliński",
+  "role":"Lider Działu Elektroniki",
+  "contact":"kontakt@piotr-zielinski.pl",
+  "text":"Jak to jest nie mieć czasu na sen? Moim zdaniem to nie ma tak, że dobrze albo że nie dobrze.",
+  "photo":"src/img/team/Piotr_Zielinski.jpg"
+  },
+
+
+
+  {
+  "name":"Damian Brzoza",
+  "role":"Specjalista ds. Machine Learningu",
+  "contact":"damianbrzoza95@gmail.com",
+  "text":"Życie jest jak pudełko czekoladek. A z pudełkiem czekoladek sprawniej rządzi się w grupie.",
+  "photo":"src/img/team/Damian_Brzoza.jpg"
+  },
+
+
+
+
+  {
+  "name":"Tomasz Debudaj",
+  "role":"Członek Działu Konstrukcji ",
+  "contact":"",
+  "text":"Tylko dwie rzeczy są nieskończone: wszechświat oraz ludzka głupota, choć nie jestem pewien co do tej pierwszej.",
+  "photo":"src/img/team/Tomasz_Debudaj.jpg"
+  },
+
+  {
+  "name":"Agnieszka Ilnicka",
+  "role":"Specjalista ds. Druku 3D",
+  "contact":"gooagaxx@gmail.com",
+  "text":"Once we accept our limits, we go beyond them.",
+  "photo":"src/img/team/Agnieszka_Ilnicka.jpg"
+  },
+
+  {
+  "name":"Aleksandra Komorowska",
+  "role":"Członek Działu Konstrukcji ",
+  "contact":"aleks_1998@wp.pl",
+  "text":"Twardkim trzeba być, a nie miętkim!",
+  "photo":"src/img/team/Aleksandra_Komorowska.jpg"
+  },
+
+
+  {
+  "name":"Volodymyr Mykyta",
+  "role":"Członek Działu Konstrukcji ",
+  "contact":"volodymyr.mykyta@o2.pl",
+  "text":"Umiesz liczyć? Licz na siebie!",
+  "photo":"src/img/team/Volodymyr_Mykyta.jpg"
+  },
+
+  {
+  "name":"Adam Szwedor",
+  "role":"Lider Działu Konstrukcji",
+  "contact":"adamszwedor@gmail.com",
+  "text":"Denerwuje mnie własna niewiedza.",
+  "photo":"src/img/team/Adam_Szwedor.jpg"
+  },
+
+
+  {
+  "name":"Tomasz Majewski",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"majamex123@gmail.com",
+  "text":"Lepiej zaliczać się do niektórych, niż do wszystkich.",
+  "photo":"src/img/team/Tomasz_Majewski.jpg"
+  },
+
+  {
+  "name":"Jakub Markowski",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"gukeskl@gmail.com",
+  "text":"",
+  "photo":"src/img/team/Jakub_Markowski.jpg"
+  },
+
+  {
+  "name":"Mateusz Statkiewicz",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"statkprivate@gmail.com",
+  "text":"Nie jestem nieszczęśliwy. Tylko ludzie pozbawieni celu się nieszczęśliwi. Ja mam cel.",
+  "photo":"src/img/team/Mateusz_Statkiewicz.jpg"
+  },
+
+  {
+  "name":"Bartosz Chmielewski",
+  "role":"Specjalista ds. Wizualnych",
+  "contact":"3alast@gmail.com",
+  "text":"Marketing to zamiana porażki w największy sukces.",
+  "photo":"src/img/team/Bartosz_Chmielewski.jpg"
+  },
+
+
+  {
+  "name":"Mikołaj Kaźmierczak",
+  "role":"Web Developer i Specjalista ds. Design Thinking",
+  "contact":"mikolaj@kazmierczak.pl",
+  "text":"Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
+  "photo":"src/img/team/Mikolaj_Kazmierczak.jpg"
+  },
+
+  {
+  "name":"Maria Kivachuk",
+  "role":"Specjalista ds. Fotografii i Grafiki",
+  "contact":"Kivachuk.masha@gmail.com",
+  "text":"Go big or go home.",
+  "photo":"src/img/team/Maria_Kivachuk.jpg"
+  },
+
+  {
+  "name":"Paulina Kniaś",
+  "role":"Specjalista ds. Fundraisingu",
+  "contact":"kniaspaulina@gmail.com",
+  "text":"We're all hallucinating all the time. It's just that when we agree about our hallucinations, we call that reality. ",
+  "photo":"src/img/team/Paulina_Knias.jpg"
+  },
+
+  {
+  "name":"Antonina Kryszewska",
+  "role":"Członek Działu Marketing & Management",
+  "contact":"antoninakryszewska@gmail.com",
+  "text":"Rozwiązanie problemu jest wystarczająco trudne; jest o wiele trudniej, jeśli zdecydujesz wcześniej, że nie da się tego zrobić.",
+  "photo":"src/img/team/Antonina_Kryszewska.jpg"
+  },
+
+  {
+  "name":"Darya Machulskaya",
+  "role":"Specjalista ds. Graficznych i Brandingu",
+  "contact":"machulik1998@gmail.com",
+  "text":"Lepiej być w życiu impresjąnistą, niż pesymistą",
+  "photo":"src/img/team/Darya_Machulskaya.jpg"
+  },
+
+  {
+  "name":"Marcelina Radziejewska",
+  "role":"Członek Działu Marketing & Management",
+  "contact":"marcelinaaradziejewska@gmail.com",
+  "text":"Umysł jest swoim własnym panem i sam potrafi niebem uczynić piekło i piekłem niebo (John Milton, Raj Utracony).",
+  "photo":"src/img/team/Marcelina_Radziejewska.jpg"
+  },
+
+  {
+  "name":"Vasilisa Svirydava",
+  "role":"PM",
+  "contact":"vas.sviridova@mail.ru",
+  "text":"Love people. Use things. The opposite never works.",
+  "photo":"src/img/team/Vasilisa_Svirydava.jpg"
+  },
+
+  {
+  "name":"Martyna Wujak",
+  "role":"Specjalista ds. Graficznych i Brandingu",
+  "contact":"martyna.wujak@gmail.com",
+  "text":"Carpe diem!",
+  "photo":"src/img/team/Martyna_Wujak.jpg"
+  },
+
+  {
+  "name":"Łukasz Dworzak",
+  "role":"Opiekun naukowy",
+  "contact":"",
+  "text":"Problemem nie jest zarabianie pieniędzy samo w sobie. Problemem jest zarabiać je, robiąc coś, czemu warto poświęcić całe życie.",
+  "photo":"src/img/team/Lukasz_Dworzak.jpg"
+  },
+
+  {
+  "name":"Jacek Ziemba",
+  "role":"Opiekun naukowy",
+  "contact":"",
+  "text":"Ja nie mam nic, ty nie masz nic, on nie ma nic - To razem właśnie mamy tyle, w sam raz tyle, żeby założyć wielką fabrykę - Reymont",
+  "photo":"src/img/team/Jacek_Ziemba.jpg"
+  },
+
+  {
+  "name":"Krzysztof Dziuba",
+  "role":"Lider Działu Software",
+  "contact":"krzysztofdziuba97@gmail.com",
+  "text":"Specjalizuję się w integracji oprogramowania na Raspberry Pi oraz pracuję nad algorytmem lokalizacji pingera.",
+  "photo":"src/img/team/Krzysztof_Dziuba.jpg"
+  },
+
+  {
+  "name":"Patryk Gańczarek",
+  "role":"",
+  "contact":"",
+  "text":"Stay hungry. Stay foolish.",
+  "photo":"src/img/team/Patryk_Ganczarek.jpg"
+  },
+
+  {
+  "name":"Kacper Krej",
+  "role":"Członek Działu Software",
+  "contact":"kacper.krej@gmail.com",
+  "text":"Jak założysz skarpetki na lewą stronę, to cały wszechświat nosi twoje skarpetki, a ty nie",
+  "photo":"src/img/team/Kacper_Krej.jpg"
+  },
+
+
+
+  {
+  "name":"Michał Pogoda",
+  "role":"Specjalista ds. ML",
+  "contact":"michal.pogoda.robocik@gmail.com",
+  "text":"Wyobraźnia jest ważniejsza od wiedzy, ponieważ wiedza jest ograniczona.",
+  "photo":"src/img/team/Michal_Pogoda.jpg"
+  },
+
+  {
+  "name":"Igor Zieliński",
+  "role":"Specjalista ds. Zasilania łodzi",
+  "contact":"igorzielinski3c@wp.pl",
+  "text":"Barry Benson, weź się w końcu do roboty.",
+  "photo":"src/img/team/Igor_Zielinski.jpg"
+  },
+
+
+  {
+  "name":"Jędrzej Jamnicki",
+  "role":"Członek Działu Software",
+  "contact":"jedrzej.jamnicki@gmail.com",
+  "text":"Jak nie, jak tak",
+  "photo":"src/img/team/Jedrzej_Jamnicki.jpg"
+  },
+
+
+  {
+  "name":"Szymon Korczyński",
+  "role":"Członek Działu Software ",
+  "contact":"Szymonkor8@gmail.com ",
+  "text":"Natura dała nam dwoje uszu, ale tylko jeden język po to, abyśmy więcej słuchali, niż mówili. - Sokrates",
+  "photo":"src/img/team/Szymon_Korczynski.jpg"
+  },
+
+  {
+  "name":"Oliwer Sobolewski",
+  "role":"Członek Działu Software",
+  "contact":"oliwer.sobolewski1@gmail.com",
+  "text":"Wszystkie roboty są wspaniałe. Nawet te drogowe.",
+  "photo":"src/img/team/Oliwer_Sobolewski.jpg"
+  },
+
+  {
+  "name":"Bartosz Stucke",
+  "role":"Członek Działu Software",
+  "contact":"stucke.bartosz@gmail.com",
+  "text":"Żyj tak, jakbyś miał umrzeć jutro. ucz się tak, jakbyś miał żyć wiecznie",
+  "photo":"src/img/team/Bartosz_Stucke.jpg"
+  },
+
+  {
+  "name":"Wojciech Szajda",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"wojciech.szajda4@gmail.com",
+  "text":"Praca spawacza mnie przeistacza, z piórka na wietrze w lodołamacza.",
+  "photo":"src/img/team/Wojciech_Szajda.jpg"
+  },
+
+  {
+  "name":"Miłosz Lisowski",
+  "role":"Prezes Zarządu",
+  "contact":"milosz.lisowski@gmail.com",
+  "text":"Człowiek uczy się na błędach, kiedy wie, że je popełnia.",
+  "photo":"src/img/team/Milosz_Lisowski.jpg"
+  },
+
+  {
+  "name":"Aleksandra Maziarz",
+  "role":"Wiceprezes ds. Organizacji i Promocji",
+  "contact":"xmaziarz@gmail.com",
+  "text":"Do the best you can until you know better. Then when you know better, do better.",
+  "photo":"src/img/team/Aleksandra_Maziarz.jpg"
+  },
+
+  {
+  "name":"Wiktor Paluch",
+  "role":"Specjalista ds. Formalnych",
+  "contact":"wiktorpaluch072@gmail.com",
+  "text":"Potężna wichura łamiąc duże drzewa, trzciną zaledwie tylko kołysze.",
+  "photo":"src/img/team/Wiktor_Paluch.jpg"
+  },
+
+  {
+  "name":"Michał Pawłowski",
+  "role":"Wiceprezes ds. Finansowych",
+  "contact":"pawlowski.michal1a@gmail.com",
+  "text":"Jestem zapotrzebowaniem działu technicznego.",
+  "photo":"src/img/team/Michal_Pawlowski.jpg"
+  },
+
+  {
+  "name":"Dominik Wasiółka",
+  "role":"Wiceprezes ds. Technicznych",
+  "contact":"dominik.wasiolka@gmail.com",
+  "text":"Jeśli cel przyświeca, sposób musi się znaleźć.",
+  "photo":"src/img/team/Dominik_Wasiolka.jpg"
+  },
+
+  {
+  "name":"Jakub Szwedowicz",
+  "role":"Członek Działy Elektroniki",
+  "contact":"kuba.szwedowicz@gmail.com",
+  "text":"Niektórzy ludzie nie lubią zmian, ale trzeba podjąć zmiany, jeśli alternatywa oznacza katastrofę.",
+  "photo":"src/img/team/Jakub_Szwedowicz.jpg"
+  },
+
+  {
+  "name":"Kacper Szymankiewicz",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"kszymankiewicz99@gmail.com",
+  "text":"When we are no longer able to change a situation, we are challenged to change ourselves",
+  "photo":"src/img/team/Kacper_Szymankiewicz.jpg"
+  },
+
+
+
+
+
+
+  {
+  "name":"Damian Miłek",
+  "role":"Członek Działu Konstrukcji",
+  "contact":"damian66m@o2.pl",
+  "text":"Nie ma tak że dobrze albo że niedobrze.",
+  "photo":"src/img/team/Damian_Milek.jpg"
+  },
+
+  {
+  "name":"Andrii Torulia",
+  "role":"Członek Działu Elektroniki",
+  "contact":"g93780@gmail.com",
+  "text":"Wunschpunsch albo szatanarchistorygenialkoholimpijski eliksir",
+  "photo":"src/img/team/Andrii_Torulia.jpg"
+  },
+
+  {
+  "name":"Piotr Barnaś",
+  "role":"Członek Działu Software ",
+  "contact":"piotr.barnas13@gmail.com",
+  "text":"W życiu nie jest ważne jak mocno uderzasz. Ważne jest ile ciosów jesteś w stanie przyjąć i dalej iść do przodu.",
+  "photo":"src/img/team/Piotr_Barnas.jpg"
+  },
+
+  {
+  "name":"Filip Adamcewicz",
+  "role":"Lider Działu Elektroniki",
+  "contact":"fadamcewicz1@gmail.com",
+  "text":"Ciężko jest lekko żyć",
+  "photo":"src/img/team/Filip_Adamcewicz.jpg"
   }
-]}
+
+
+  ]}

@@ -12,7 +12,7 @@ function checkIdAnchors(el) {
   if (el.getAttribute("href").startsWith("#")) {
     // close the menu when clicked on an IdAnchor
     el.onclick = function (e) {
-      CloseMenu();
+      menu.close();
     };
   }
 }

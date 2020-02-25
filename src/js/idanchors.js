@@ -13,7 +13,7 @@ function checkIdAnchors(el) {
 
     // close the menu when clicked on an IdAnchor
     el.onclick = (e) => {
-      CloseMenu();
+      menu.close();
     }
 
   }

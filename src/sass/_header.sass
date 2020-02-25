@@ -2,22 +2,22 @@ header
   position: fixed
   top: 0
   left: 0
-  overflow: hidden
   display: flex
   justify-content: space-between
   height: $sizeHeader
   width: 100%
   color: #fff
   z-index: 100
+  transform: translateY(0)
+  transition: transform $tSlow cubic-bezier(.08,.54,0,1)
 
   .logo
     padding-left: 20px
     height: 100%
     width: 100%
     background-color: $colorMain
-    transform: translateY(-200%)
+    transform: translateY(-100%)
     transition: transform $tSlow cubic-bezier(.08,.54,0,1)
-
     .logo__link
       display: flex
       flex-wrap: nowrap
@@ -25,31 +25,25 @@ header
       height: 100%
       padding: 12px 0
       text-decoration: none
-
       .logo__icon
         display: inline-block
         height: 100%
-
       .logo__title
         margin-left: 12px
         font-family: 'Jura', sans-serif
         font-size: 24px
         color: #fff
-
   .logo--visible
     transform: translateY(0)
-
 
   .menu-button
     display: flex
     padding: 12px 12px
     height: 100%
     background-color: $colorMain
-
     .menu-button__icon
       display: none
       height: 100%
-
     .menu-button__icon--active
       display: block
 
@@ -64,3 +58,6 @@ header
 
     .menu-button
       display: none
+
+.header--hidden
+  transform: translateY(-100%)

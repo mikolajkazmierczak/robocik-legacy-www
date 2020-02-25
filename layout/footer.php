@@ -30,19 +30,23 @@
   </script>
 
   <script src="src/lib/anime.min.js"></script>
-  <script src="dist/wavesbg.js?v=1"></script>
-
+  <script src="dist/wavesbg.js?v=2"></script>
 
   <script src="dist/_global.js?v=3"></script>
+  <script src="dist/_util.js"></script>
 
-  <script src="dist/header.js?v=3"></script>
-  <script src="dist/menu.js?v=3"></script>
+  <script src="dist/header.js?v=4"></script>
+  <script src="dist/menu.js?v=4"></script>
+  <script src="dist/popup.js"></script>
 
-  <script src="dist/progressbar.js?v=1"></script>
-  <script src="dist/team_arrows.js?v=1"></script>
-  <script src="dist/team.js?v=3"></script>
+  <script src="dist/progressbar.js?v=2"></script>
+  <script src="dist/team_arrows.js?v=2"></script>
+  <script src="dist/team.js?v=4"></script>
 
-  <script src="dist/newsletter.js?v=1"></script>
+  <script src="dist/newsletter.js?v=2"></script>
+
+
+  <script src="dist/lang.js"></script>
 
 </body>
 

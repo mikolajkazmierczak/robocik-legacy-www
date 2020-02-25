@@ -35,7 +35,7 @@ function () {
     key: "start",
     value: function start() {
       this.step();
-      console.log('ProgressBar: Running.');
+      console.log('ProgressBar: Running...');
     }
   }, {
     key: "step",
@@ -64,7 +64,7 @@ function () {
     key: "stop",
     value: function stop() {
       clearInterval(this.interval);
-      console.log('ProgressBar: Paused.');
+      console.log('ProgressBar: Paused');
     }
   }]);
 

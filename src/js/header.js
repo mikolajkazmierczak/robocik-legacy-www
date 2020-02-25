@@ -1,44 +1,91 @@
 'use strict';
 
-// check if scrolled more then one viewport height (effectively the first section)
-function CheckOffset() {
-  let windowOffset = window.pageYOffset; // how many pixels were scrolled
-  let windowHeight = window.innerHeight; // height in pixels
-  let offsetTop    = windowHeight - windowOffset;
-  return offsetTop - header.offsetHeight;
+class Logo {
+  constructor(el) {
+    this.el = el;
+  }
+  hide() {
+    this.el.classList.remove('logo--visible');
+  }
+  show() {
+    this.el.classList.add('logo--visible');
+  }
 }
+let logo = new Logo(document.querySelector('.logo'));
 
-function ShowLogo() {
-  logo.classList.add('logo--visible');
+class MenuButton {
+  constructor(el) {
+    this.el = el;
+  }
+  hide() {
+    this.el.classList.add('menu-button--hidden');
+  }
+  show() {
+    this.el.classList.remove('menu-button--hidden');
+  }
 }
-function HideLogo() {
-  logo.classList.remove('logo--visible');
-}
+let menuButton = new MenuButton(document.querySelector('.menu-button'));
 
-function CheckLogo() {
-  if(is_menu_opened) {
-    ShowLogo();
-  } else {
-    if(CheckOffset() < 0) {
-      ShowLogo();
-    } else {
-      HideLogo();
+class Header {
+  constructor(el) {
+    this.el = el;
+    this.locked = false;
+  }
+
+  state(state, lock) {
+    if(lock === false) {
+      this.locked = lock;
+    }
+
+    if(!this.locked) {
+      if (state === 0) { // auto (show or hide logo when needed)
+        let title = document.querySelector('.section-banner-main__text > h1');
+        let titleOffsetTop = title.getBoundingClientRect().top;
+        if(titleOffsetTop < 0) {
+          this.state(2);
+        } else {
+          this.state(1);
+        }
+      }
+      if (state === 1) { // show only the menu button
+        menuButton.show();
+        logo.hide();
+        this.el.classList.remove('header--hidden');
+      }
+      if (state === 2) { // show both (menu button + logo)
+        menuButton.show();
+        logo.show();
+        this.el.classList.remove('header--hidden');
+      }
+      if (state === 3) { // hide both (menu button + logo) if on phone
+        if(window.innerWidth < 780) {
+          this.el.classList.add('header--hidden');
+        }
+      }
+
+      this.locked = lock;
     }
   }
-  // TODO: When changed to PC mode when Menu was opened in Mobile - the Logo is always shown.
-  // TODO: Fix: Close the menu when entering PC mode from Mobile mode.
+
+  show() {
+    this.state(2, true)
+  }
+  hide() {
+    this.state(3, true)
+  }
+  auto() {
+    this.state(0, false)
+  }
 }
+let header = new Header(document.querySelector('header'));
 
 
-document.addEventListener('scroll', function() {
-  CheckLogo();
+document.addEventListener('scroll', () => {
+  header.state(0);
 });
-document.addEventListener('resize', function() {
-  CheckLogo();
+document.addEventListener('load', () => {
+  header.state(0);
 });
-document.addEventListener('load', function() {
-  CheckLogo();
-});
-menuButton.addEventListener('click', function() {
-  CheckLogo();
+window.addEventListener('resize', () => {
+  header.state(0);
 });

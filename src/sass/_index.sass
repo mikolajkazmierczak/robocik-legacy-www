@@ -9,7 +9,7 @@
 /* Sections */
 
 section
-  overflow-x: hidden
+  overflow: hidden
   position: relative
   width: 100%
 
@@ -23,11 +23,19 @@ section
 
 .section-banner-main
   z-index: 1
+  position: relative
   overflow: visible
   padding: 20px
   min-height: 100vh
   width: 100%
   background-color: $colorMain
+
+  .section-banner-main__logo
+    position: absolute
+    top: 30%
+    right: -50%
+    width: 100%
+    opacity: 0.5
 
   .section-banner-main__wavesbg
     img
@@ -55,6 +63,11 @@ section
     margin-top: $sizeHeader
     padding: 0
     height: calc(100vh - #{$sizeHeader})
+
+    .section-banner-main__logo
+      top: -10vh
+      right: -10vw
+      width: 50%
 
     .section-banner-main__wavesbg
       img
@@ -115,16 +128,18 @@ section
   background-color: #fff
 
   .section-drone__img
+    margin-top: 50px
     img
       width: 100%
 
   .section-drone__icons
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: center
     margin-top: 20px
     img
-      height: 50px
+      padding: 5px
+      width: 25%
 
 @include tablet()
   .section-drone
@@ -148,8 +163,10 @@ section
 
     .section-drone__icons
       margin-top: 50px
+      justify-content: space-between
       img
-        height: 60px
+        padding: 0
+        width: 8%
 
 
 
@@ -200,25 +217,26 @@ section
 
     .section-graphics__elem
       overflow: visible
-      p
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
-        width: 150%
 
   @include tablet()
     .section-divisions
       .section-graphics__elem
         img
           width: 80%
+        p
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          width: 150%
 
   .section-team__slider
-    margin: 100px 0
+    margin: 50px 0
     padding: 0 30px
 
     .slider__el
       will-change: transform
-      transition: opacity $tRapid, transform $tRapid
+      transition: opacity, transform
+      transition-duration: $tRapid
     .slider__el--transparent
       opacity: 0
     .slider__el--invisible
@@ -229,6 +247,7 @@ section
       transform: translateX(-100%)
 
     .slider__info
+      overflow: visible
       margin: 0 10px
       .slider__tag
         position: relative
@@ -250,22 +269,31 @@ section
         h4
           z-index: 1
           position: relative
-      .slider__role
-        margin-bottom: 10px
+      .slider__name
+        line-height: 0.9
+        margin-bottom: 5px
       .slider__contact
-        margin-bottom: 40px
+        margin-bottom: 20px
         color: #828282
       .slider__text
-        margin-bottom: 20px
         max-width: 400px
         min-height: 120px
 
     .slider__photo
       position: relative
       width: 100%
+      .loader
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 73px
+        height: 73px
       .slider__img
         display: block
         width: 100%
+      .slider__img--hidden
+        display: none
 
     .slider__arrow
       z-index: 100
@@ -290,17 +318,20 @@ section
 
   @include tablet()
     .section-team__slider
+      margin: 100px 0
       padding: 0
       min-height: 400px
       height: 40vh
+
+      .slider__info
+        .slider__contact
+          margin-bottom: 40px
 
       .slider__photo
         display: flex
         justify-content: center
         align-items: center
         .slider__img
-          position: absolute
-          top: 0
           width: 400px
 
       .slider__arrow

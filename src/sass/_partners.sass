@@ -1,0 +1,29 @@
+.partners
+  text-align: center
+
+  h1
+    margin-bottom: 20px
+    
+  hr
+    border: 1px #000 solid
+    margin: 40px auto
+    width: 30%
+
+  .partners__logos
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    img
+      padding: 10px
+      width: 50%
+
+@include tablet()
+  .partners
+    hr
+      margin: 60px auto
+      width: 20%
+    .partners__logos
+      img
+        width: 20%
+

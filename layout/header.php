@@ -14,7 +14,7 @@
         content="koło naukowe robocik, kn robocik, pwr diving crew, politechnika wrocławska, pwr, robot, roboty, robotyka, automatyka, ekologia, ekologiczne, nauka, naukowe, innowacja, innowacyjne">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 
 <body>
@@ -36,10 +36,20 @@
       </a>
     </div>
     <div class="menu-button">
-      <img class="menu-button__icon menu-button__icon--open menu-button__icon--active" src="<?php echo $rootUrl . 'src/img/menu/menu.svg' ?>">
-      <img class="menu-button__icon menu-button__icon--close" src="<?php echo $rootUrl . 'src/img/menu/close.svg' ?>">
+      <img class="menu-button__icon menu-button__icon--open menu-button__icon--active" src="<?php echo $rootUrl . 'src/img/icons/menu/menu.svg' ?>">
+      <img class="menu-button__icon menu-button__icon--close" src="<?php echo $rootUrl . 'src/img/icons/menu/close.svg' ?>">
     </div>
     <?php include 'menu.php'; ?>
   </header>
+
+  <div class="popup cols">
+    <div class="popup__bg"></div>
+    <div class="popup__main col-2-13">
+      <div class="popup__close">
+        <img src="<?php echo $rootUrl . 'src/img/icons/popup/close.svg' ?>">
+      </div>
+      <div class="popup__content"></div>
+    </div>
+  </div>
 
 <!--  <div class="site-wrapper">-->

@@ -37,12 +37,15 @@ menu
   #lang
     display: flex
     padding: 0 20px
-    #pl, #en
+    div
       margin: 0 20px 0 0
       cursor: pointer
       img
         display: block
         width: 15vw
+
+.menu--opened
+  transform: translateX(0)
 
 @include tablet()
   menu
@@ -71,22 +74,15 @@ menu
         color: #000
         background-color: #fff
 
-
     #lang
       margin-left: 30px
       padding: 0
-      #pl, #en
+      div
         margin: 0 0 0 10px
         padding: 5px
         transition: background-color $tFast
         img
           width: 30px
-      #pl:hover, #en:hover
+      div:hover
         background-color: #fff
-
-.menu--opened
-  transform: translateX(0)
-
-
-
 

@@ -1,38 +1,7 @@
 'use strict';
 
-/* Load Team Data from src/team.json */
-
-let teamData; // full data from the sever
+let teamData; // full data from from src/team.json
 let teamData_len; // amount of team members
-
-function LoadDataJSON() {
-  return new Promise((resolve, reject) => {
-
-    // AJAX call for JSON data from the server
-    let xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-
-    xhr.addEventListener('load', function () {
-      if (xhr.status === 200) {
-        teamData = xhr.response;
-        teamData_len = teamData.team.length;
-        resolve();
-      }
-    });
-
-    xhr.open('POST', rootUrl + 'src/team.json', true);
-    xhr.send();
-
-  });
-}
-
-function PreloadTeamPhotos() {
-  // preload photos to browser memory for faster loading when switching between people
-  for(let i = 0; i < teamData_len; i++) {
-    new Image().src = rootUrl + teamData.team[i].photo;
-  }
-}
-
 
 
 // member from the array being shown in the slider
@@ -68,6 +37,7 @@ function sliderChooseMember(member) {
 
 
 
+// modify the data depending on the slider category
 function sliderCheckInfo(data, el) {
   if(data === '') { // no data
 
@@ -76,13 +46,13 @@ function sliderCheckInfo(data, el) {
       el.classList.add('slider__el--invisible');
     }
 
-    if(el === sliderImg) {
-      sliderImg.style.display = 'none';
-    }
-
   } else {
 
-    if (el === sliderContact || el === sliderRole) {
+    if (el === sliderName) {
+      data = data.replace(' ', '<br>');
+    }
+
+    if (el === sliderRole || el === sliderContact) {
       el.classList.remove('slider__el--invisible');
     }
 
@@ -94,80 +64,89 @@ function sliderCheckInfo(data, el) {
       }
     }
 
-    if(el === sliderImg) {
-      sliderImg.style.display = 'block';
-    }
-
   }
   return data;
 }
 
-
-function sliderDisplayInfo(time, member_i) {
+function sliderChangeInfo(member_i) {
   let member = teamData.team[member_i];
 
   [sliderName, sliderRole, sliderContact, sliderText].forEach(el => {
     let data = '';
+
     if(el === sliderName)    { data = sliderCheckInfo(member.name,    el); }
     if(el === sliderRole)    { data = sliderCheckInfo(member.role,    el); }
     if(el === sliderContact) { data = sliderCheckInfo(member.contact, el); }
     if(el === sliderText)    { data = sliderCheckInfo(member.text,    el); }
 
-    let dataLen = data.length;
-    let timer = time / dataLen;
-    for(let i = 0; i <= dataLen; i++) {
-      setTimeout(()=>{
-        el.innerHTML = data.slice(0, i);
-      }, timer*i);
-    }
-  });
-
-  sliderImg.src = sliderCheckInfo(member.photo, sliderImg);
-}
-
-function sliderClearInfo(time) {
-  [sliderName, sliderRole, sliderContact, sliderText].forEach(el => {
-    let elLen = el.innerHTML.length;
-    let timer = time / elLen;
-    for(let i = 1; i <= elLen; i++) {
-      setTimeout(()=>{
-        el.innerHTML = el.innerHTML.slice(0, elLen-i);
-      }, timer*i);
-    }
+    el.innerHTML = data;
   });
 }
 
-function sliderFadeIn(time, direction) {
-  // showing photo after additional one transition time (giving it time to load)
-  setTimeout(()=>{
-    sliderImg.classList.remove('slider__el--transparent');
-  }, time);
 
-  // showing info letter by letter
-  sliderDisplayInfo(time, sliderChooseMember(direction));
+
+function sliderFadeIn(direction) {
+  // show person's info
+  sliderChangeInfo(sliderChooseMember(direction));
+
+  // show photo
+  sliderImgs[slider_current_member].classList.remove('slider__img--hidden');
 }
 
-function sliderFadeOut(time) {
+function sliderFadeOut() {
   // make photo transparent
-  sliderImg.classList.add('slider__el--transparent');
-
-  // remove info letter by letter
-  sliderClearInfo(time);
+  sliderImgs[slider_current_member].classList.add('slider__img--hidden');
 }
 
 function sliderSlide(direction) {
-  let sliderEl = document.querySelector('.slider__el');
-  // time for how long it takes to hide or show the photo (one transition)
-  let time = parseFloat(getComputedStyle(sliderEl)['transitionDuration'])*1000;
+  // fade out the previous photo
+  // (-1 means no member was shown yet, hence there is no photo to fade out)
+  if(slider_current_member !== -1) {
+    sliderFadeOut();
+  }
 
-  sliderFadeOut(time);
-
-  // after one transition length show the info
-  // after two lengths show the img (giving it time to load)
-  setTimeout(()=>{
-    sliderFadeIn(time, direction);
-  }, time);
+  // show next info and photo
+  sliderFadeIn(direction);
 }
+
+
+
+// preload photos to browser memory for faster loading when switching between people
+function PreloadTeamPhotos() {
+  for(let i = 0; i < teamData_len; i++) {
+    // new Image().src = rootUrl + teamData.team[i].photo;
+
+    let img = document.createElement('img');
+    img.classList.add('slider__el');
+    img.classList.add('slider__img--hidden');
+    img.classList.add('slider__img');
+    img.setAttribute('src', rootUrl + teamData.team[i].photo);
+
+    sliderPhoto.appendChild(img);
+
+    sliderImgs = document.querySelectorAll(
+      '.slider__img');
+  }
+}
+
+// when site loads: load team data. preload photos, load the first person, activate the progressbar
+window.addEventListener('load', ()=>{
+  LoadDataJSON(`${rootUrl}src/team.json`).then(data => {
+    teamData = data;
+    teamData_len = data.team.length;
+    PreloadTeamPhotos();
+    sliderSlide('next');
+    progressbar.start(); // run the progressbar from progressbar.js
+  });
+});
+
+
+
+/* ProgressBar */
+let progressbar = new Progressbar(
+  document.querySelector('.slider__progress-bar'),
+  5
+);
 
 
 
@@ -177,24 +156,6 @@ sliderArrowPrevious.addEventListener('click', ()=>{
 sliderArrowNext.addEventListener('click', ()=>{
   sliderSlide('next');
 });
-
-
-// when site loads - preload photos and load the first person
-window.addEventListener('load', ()=>{
-  LoadDataJSON().then(res => {
-    PreloadTeamPhotos();
-    sliderSlide('next');
-  });
-
-  progressbar.start(); // run the progressbar from progressbar.js
-});
-
-
-/* ProgressBar */
-let progressbar = new Progressbar(
-  document.querySelector('.slider__progress-bar'),
-  3
-);
 
 sliderArrowPrevious.addEventListener('mouseover', ()=>{
   progressbar.stop();

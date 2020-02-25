@@ -2,27 +2,27 @@
 
   <div class="banner-wrapper">
     <section class="section-banner-main cols">
+      <img class="section-banner-main__logo" src="<?php echo $rootUrl . 'src/img/logo_white.svg' ?>">
       <div class="section-banner-main__wavesbg">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_1.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_2.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_3.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_4.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_5.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_6.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_7.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_8.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_9.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_10.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_11.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_12.svg' ?>">
-        <img src="<?php echo $rootUrl . 'src/img/bg/wavesbg_13.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/1.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/2.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/3.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/4.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/5.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/6.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/7.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/8.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/9.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/10.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/11.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/12.svg' ?>">
+        <img src="<?php echo $rootUrl . 'src/img/wavesbg/13.svg' ?>">
       </div>
       <div class="section-banner-main__text section__text--project col-2-7">
-        <h2>Koło Naukowe</h2>
-        <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
-        <p>Koło Naukowe<br>Automatyki i Robotyki „Robocik”<br>to organizacja studencka na<br>Politechnice Wrocławskiej.</p>
-        <p>Cel ‒ zabawa nauką.<br>Konsekwencją ‒ innowacja.</p>
-        <p>Studencki żywioł i<br>uczelniany profesjonalizm.</p>
+        <h2 data-lang="banner_subtitle"></h2>
+        <h1 class="h1--huge" data-lang="banner_title"></h1>
+        <p data-lang="banner_p_1"></p>
+        <p data-lang="banner_p_2"></p>
       </div>
       <div class="lax section-banner-main__img col-9-6"
            data-lax-translate-y_small="0 0, vh 200 | speed=0.75"
@@ -38,20 +38,20 @@
       <div class="section-graphics__elem col-3-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/vision.png' ?>"
              alt="Vision icon">
-        <h2>Wizja</h2>
-        <p>Rozwój indywidualny<br>poprzez współdziałanie.</p>
+        <h2 data-lang="vision_vision"></h2>
+        <p data-lang="vision_vision_p"></p>
       </div>
       <div class="section-graphics__elem col-7-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/mission.png' ?>"
              alt="Mission icon">
-        <h2>Misja</h2>
-        <p>Podwyższać kompetencje<br>i równocześnie bawić.</p>
+        <h2 data-lang="vision_mission"></h2>
+        <p data-lang="vision_mission_p"></p>
       </div>
       <div class="section-graphics__elem col-11-3">
         <img src="<?php echo $rootUrl . 'src/img/icons/graphics/values.png' ?>"
              alt="Values icon">
-        <h2>Wartości</h2>
-        <p>Wizjonerstwo, kooperacja,<br>integracja, wiedza,<br>motywacja.</p>
+        <h2 data-lang="vision_values"></h2>
+        <p data-lang="vision_values_p"></p>
       </div>
     </section>
 
@@ -66,39 +66,40 @@
 
   <section id="project" class="section-drone cols">
     <div class="section-drone__text section__text--project col-3-6">
-      <h2>Pionierski projekt:</h2>
-      <h1 class="h1--huge"><span>PW</span>R <span>D</span>IVING <span>C</span>REW</h1>
-      <p>Inżynieria pojazdów podwodnych to niszowa,<br>lecz bardzo istotna gałąź nauki.</p>
-      <p>Nasza organizacja zajmuje się budową<br>robotów pracujących w środowisku wodnym.</p>
-      <p>Konstrukcje te mogą być używane do zadań<br>eksploracyjnych, ratowniczych oraz militarnych.</p>
+      <img src="">
+      <h2 data-lang="project_subtitle"></h2>
+      <h1 class="h1--huge" data-lang="project_title"></h1>
+      <p data-lang="project_p_1"></p>
+      <p data-lang="project_p_2"></p>
+      <p data-lang="project_p_3"></p>
     </div>
     <div class="section-drone__img col-9-5">
       <img src="<?php echo $rootUrl . 'src/img/rov_4_0/auv.jpg' ?>"
            alt="AUV 3D render">
     </div>
     <div class="section-drone__icons col-3-11">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_load.svg' ?>"
-           alt="InsideAUV: Even 0.5kg of load">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_axes.svg' ?>"
-           alt="InsideAUV: 6 axes of movement">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_underwater.svg' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/1_depth.svg' ?>"
            alt="InsideAUV: Even 100m underwater">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_xavier.svg' ?>"
-           alt="InsideAUV: Nvidia Xavier">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_weight.svg' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/2_axes.svg' ?>"
+           alt="InsideAUV: 6 axes of movement">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/3_load.svg' ?>"
+           alt="InsideAUV: Even 0.5kg of load">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/4_weight.svg' ?>"
            alt="InsideAUV: 37kg of weight">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_sound.svg' ?>"
-           alt="InsideAUV: Sound recognition">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_cameras.svg' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/5_cameras.svg' ?>"
            alt="InsideAUV: Four HD cameras">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_xsens.svg' ?>"
-           alt="InsideAUV: Xsens">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_engines.svg' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/6_sound.svg' ?>"
+           alt="InsideAUV: Sound recognition">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/7_engine.svg' ?>"
            alt="InsideAUV: Eight engines 3kW each">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_torpedes.svg' ?>"
-           alt="InsideAUV: Six torpedes">
-      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/auv_inside_radar.svg' ?>"
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/8_radar.svg' ?>"
            alt="InsideAUV: Radar">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/9_nvidia.svg' ?>"
+           alt="InsideAUV: Nvidia Xavier">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/10_torpedes.svg' ?>"
+           alt="InsideAUV: Six torpedes">
+      <img src="<?php echo $rootUrl . 'src/img/icons/auv_inside/11_xsens.svg' ?>"
+           alt="InsideAUV: Xsens">
     </div>
   </section>
 
@@ -112,8 +113,8 @@
                alt="Crew icon">
         </div>
         <div class="section-team__text col-7-7">
-          <h1>Bo najważniejsi są ludzie</h1>
-          <p>Jesteśmy ambitnymi studentami, którzy nie wiedzą co znaczy niemożliwe. W naszej organizacji każdy ma ściśle określoną rolę, jednakże nie tylko dzięki strukturze osiągamy sukcesy. Siła tkwi w indywidualizmie!</p>
+          <h1 data-lang="team_title"></h1>
+          <p data-lang="team_p"></p>
         </div>
       </div>
 
@@ -121,33 +122,33 @@
         <div class="section-graphics__elem col-3-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/electronics.svg' ?>"
                alt="Electronics icon">
-          <h2>Elektronika</h2>
-          <p>Zajmujemy się<br>projektowaniem układów<br>scalonych ‒ zasilaczy czy<br>sterowników silników,<br>a także programowaniem<br>mikrokontrolerów.</p>
+          <h2 data-lang="team_divisions_electronics"></h2>
+          <p data-lang="team_divisions_electronics_p"></p>
         </div>
         <div class="section-graphics__elem col-6-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/software.svg' ?>"
                alt="Software icon">
-          <h2>Software</h2>
-          <p>Programiści wykorzystują<br>języki wysokiego poziomu<br>do tworzenia sztucznej<br>inteligencji, analizy obrazu,<br>transmisji danych,<br>algorytmów sterowania.</p>
+          <h2 data-lang="team_divisions_software"></h2>
+          <p data-lang="team_divisions_software_p"></p>
         </div>
         <div class="section-graphics__elem col-9-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/construction.svg' ?>"
                alt="Construction icon">
-          <h2>Konstrukcja</h2>
-          <p>Wykonujemy projekty<br>w systemach<br>SolidWorks oraz Inventor.<br>Zgłębiamy nowoczesne<br>technologie wytwarzania<br>w praktyce.</p>
+          <h2 data-lang="team_divisions_construction"></h2>
+          <p data-lang="team_divisions_construction_p"></p>
         </div>
         <div class="section-graphics__elem col-12-2">
           <img src="<?php echo $rootUrl . 'src/img/icons/divisions/marketing.svg' ?>"
                alt="Marketing icon">
-          <h2>Marketing</h2>
-          <p>Robimy zasięgi i hajs.<br>Jesteśmy najlepsi.<br>Nie wiem co tu napisać.<br>Potem coś się wymyśli.<br>W końcu od tego jesteśmy.</p>
+          <h2 data-lang="team_divisions_marketing"></h2>
+          <p data-lang="team_divisions_marketing_p"></p>
         </div>
       </section>
     </div>
 
     <div class="section-team__slider col-2-13 cols">
       <div class="slider__arrow slider__arrow--previous col-1-1">
-        <img src="<?php echo $rootUrl . 'src/img/icons/team/previous_white.svg' ?>"
+        <img src="<?php echo $rootUrl . 'src/img/icons/team/previous.svg' ?>"
              alt="Arrow pointing left (next member)">
       </div>
       <div class="slider__info col-3-6">
@@ -160,13 +161,12 @@
         <h4 class="slider__el slider__contact"></h4>
         <p  class="slider__el slider__text"></p>
       </div>
-      <div class="slider__photo col-10-4">
-        <img class="slider__el slider__img"
-             src=""
-             alt="Crew member photo">
+      <div class="slider__photo col-10-4"
+           alt="Crew member photo">
+        <div class="loader"><div></div><div></div></div>
       </div>
       <div class="slider__arrow slider__arrow--next col-15-1">
-        <img src="<?php echo $rootUrl . 'src/img/icons/team/next_white.svg' ?>"
+        <img src="<?php echo $rootUrl . 'src/img/icons/team/next.svg' ?>"
              alt="Arrow pointing right (previous member)">
       </div>
     </div>
@@ -174,55 +174,86 @@
 
 
   <section class="section-contact cols">
-    <div class="section-contact__newsletter col-5-7">
-      <h1>Newsletter</h1>
-      <p>To my w skondensowanej paczce.</p>
-      <p>Jeden mail miesięczenie.</p>
-      <p>Bo nikt nie lubi spamu.</p>
-      <form action="" method="post">
-        <div class="form__input">
-          <input class="form__input__mail" type="text" placeholder="Wpisz tu swój e-mail" name="username">
-          <button class="form__input__submit" name="submit"><span>Wyślij</span></button>
-        </div>
-        <div class="form__consent">
-          <div class="form__consent__checkbox pretty p-default p-smooth">
-            <input type="checkbox"/>
-            <div class="state">
-              <label></label>
+    <div id="newsletter" class="section-contact__newsletter col-5-7">
+      <h1 data-lang="newsletter_title"></h1>
+      <p data-lang="newsletter_p_1"></p>
+      <p data-lang="newsletter_p_2"></p>
+      <p data-lang="newsletter_p_3"></p>
+
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+
+        <form action="https://pwr.us4.list-manage.com/subscribe/post?u=5de683a3a7658ffd94b4e9b37&amp;id=feb6c296b1"
+              method="post" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+            <div class="mc-field-group form__input">
+              <label for="mce-EMAIL" style="display:none">Email Address</label>
+              <input id="mce-EMAIL" name="EMAIL" type="email"
+                     value="" placeholder="E-mail"
+                     class="form__input__mail"
+                     data-lang="newsletter_email">
+              <input id="mc-embedded-subscribe" name="subscribe" type="submit"
+                     value="Wyślij"
+                     class="form__input__submit"
+                     data-lang="newsletter_submit">
             </div>
+
+            <div id="mce-responses" class="form__response">
+              <div id="mce-error-response" class="form__error" style="display:none"></div>
+              <div id="mce-success-response" class="form__success" style="display:none"></div>
+            </div>  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5de683a3a7658ffd94b4e9b37_feb6c296b1" tabindex="-1" value=""></div>
+
+            <div class="form__consent">
+              <div class="form__consent__checkbox pretty p-default p-smooth">
+                <input type="checkbox"/>
+                <div class="state">
+                  <label></label>
+                </div>
+              </div>
+              <div class="form__consent__text">
+                <h4>
+                  <span data-lang="newsletter_consent_before"></span>
+                  <a data-popup="flexible" data-lang="newsletter_consent_withdraw" href="<?php echo $rootUrl . 'pages/withdraw_consent.php' ?>"></a>
+                  <span data-lang="newsletter_consent_after"></span>
+                </h4>
+              </div>
+            </div>
+
           </div>
-          <div class="form__consent__text">
-            <h4>Zaznaczając przycisk po lewej wyrażasz zgodę na przesyłanie na Twój adres e-mail informacji o nowościach na temat organizacji pochodzących od PWr Diving Crew, ul.Łukasiewicza 7/9, bud.B-9 p.40, 50-371 Wrocław. Zgodę w każdej chwili możesz <a href="">wycofać</a>.</h4>
-          </div>
-        </div>
-      </form>
+        </form>
+
+      </div>
+      <!-- End Mailchimp Signup Form -->
+
     </div>
 
     <div id="contact" class="section-contact__connections col-5-8">
-      <h1>Kontakt</h1>
+      <h1 data-lang="contact_title">Kontakt</h1>
       <div class="cols">
 
         <div class="col-1-7">
           <div class="section-contact__elem">
-            <h4>Siedziba :</h4>
+            <h4 data-lang="contact_location">Siedziba :</h4>
             <div class="section-contact__tile">
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/location.png' ?>"
                    alt="Location icon">
               <div class="section-contact__text">
-                <h5>Politechnika Wrocławska</h5>
-                <p>Łukasiewicza 7/9, bud. B-9, p.40</p>
-                <p>50-371 Wrocław</p>
+                <h5 data-lang="contact_location_subtitle">Politechnika Wrocławska</h5>
+                <p data-lang="contact_location_p_1">Łukasiewicza 7/9, bud. B-9, p.40</p>
+                <p data-lang="contact_location_p_2">50-371 Wrocław</p>
               </div>
             </div>
           </div>
           <div class="section-contact__elem">
-            <h4>E-mail :</h4>
+            <h4 data-lang="contact_email">E-mail :</h4>
             <div class="section-contact__tile">
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/email.png' ?>"
                    alt="Email icon">
               <div class="section-contact__text">
-                <p><a href="mailto:robocikb9@gmail.com">robocikb9@gmail.com</a></p>
-                <p><a href="mailto:robocikb9marketing@gmail.com">robocikb9marketing@gmail.com</a></p>
+                <p><a href="mailto:robocikb9@gmail.com" data-lang="contact_email_a_1">robocikb9@gmail.com</a></p>
+                <p><a href="mailto:robocikb9marketing@gmail.com" data-lang="contact_email_a_2">robocikb9marketing@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -230,18 +261,18 @@
 
         <div class="col-9-7">
           <div class="section-contact__elem">
-            <h4>Kontakt telefoniczny :</h4>
+            <h4 data-lang="contact_phone">Kontakt telefoniczny :</h4>
             <div class="section-contact__tile">
               <img src="<?php echo $rootUrl . 'src/img/icons/contact/phone.png' ?>"
                    alt="Phone icon">
               <div class="section-contact__text">
-                <h5>Wiceprezes ds. Organizacyjnych i Promocjii</h5>
-                <p>Ola Maziarz : +48 371 046 078</p>
+                <h5 data-lang="contact_phone_subtitle">Wiceprezes ds. Organizacyjnych i Promocjii</h5>
+                <p data-lang="contact_phone_p">Ola Maziarz : +48 371 046 078</p>
               </div>
             </div>
           </div>
           <div class="section-contact__elem">
-            <h4>Follow us :</h4>
+            <h4 data-lang="contact_sm">Znajdź nas na :</h4>
             <div class="section-contact__tile">
               <a href="https://zw.linkedin.com/company/ko%C5%82o-naukowe-automatyki-i-robotyki-robocik" target="_blank">
                 <img src="<?php echo $rootUrl . 'src/img/icons/contact/linkedin.png' ?>"

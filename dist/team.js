@@ -1,35 +1,10 @@
 'use strict';
-/* Load Team Data from src/team.json */
 
-var teamData; // full data from the sever
+var teamData; // full data from from src/team.json
 
 var teamData_len; // amount of team members
-
-function LoadDataJSON() {
-  return new Promise(function (resolve, reject) {
-    // AJAX call for JSON data from the server
-    var xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-    xhr.addEventListener('load', function () {
-      if (xhr.status === 200) {
-        teamData = xhr.response;
-        teamData_len = teamData.team.length;
-        resolve();
-      }
-    });
-    xhr.open('POST', rootUrl + 'src/team.json', true);
-    xhr.send();
-  });
-}
-
-function PreloadTeamPhotos() {
-  // preload photos to browser memory for faster loading when switching between people
-  for (var i = 0; i < teamData_len; i++) {
-    new Image().src = rootUrl + teamData.team[i].photo;
-  }
-} // member from the array being shown in the slider
+// member from the array being shown in the slider
 // start at -1 (no member shown)
-
 
 var slider_current_member = -1;
 
@@ -56,7 +31,8 @@ function sliderChooseMember(member) {
 
   slider_current_member = member_i;
   return member_i;
-}
+} // modify the data depending on the slider category
+
 
 function sliderCheckInfo(data, el) {
   if (data === '') {
@@ -65,12 +41,12 @@ function sliderCheckInfo(data, el) {
       data = 'Co ty tu robisz czarodzieju?';
       el.classList.add('slider__el--invisible');
     }
-
-    if (el === sliderImg) {
-      sliderImg.style.display = 'none';
-    }
   } else {
-    if (el === sliderContact || el === sliderRole) {
+    if (el === sliderName) {
+      data = data.replace(' ', '<br>');
+    }
+
+    if (el === sliderRole || el === sliderContact) {
       el.classList.remove('slider__el--invisible');
     }
 
@@ -81,16 +57,12 @@ function sliderCheckInfo(data, el) {
         data = '"' + data + '"';
       }
     }
-
-    if (el === sliderImg) {
-      sliderImg.style.display = 'block';
-    }
   }
 
   return data;
 }
 
-function sliderDisplayInfo(time, member_i) {
+function sliderChangeInfo(member_i) {
   var member = teamData.team[member_i];
   [sliderName, sliderRole, sliderContact, sliderText].forEach(function (el) {
     var data = '';
@@ -111,84 +83,66 @@ function sliderDisplayInfo(time, member_i) {
       data = sliderCheckInfo(member.text, el);
     }
 
-    var dataLen = data.length;
-    var timer = time / dataLen;
-
-    var _loop = function _loop(i) {
-      setTimeout(function () {
-        el.innerHTML = data.slice(0, i);
-      }, timer * i);
-    };
-
-    for (var i = 0; i <= dataLen; i++) {
-      _loop(i);
-    }
-  });
-  sliderImg.src = sliderCheckInfo(member.photo, sliderImg);
-}
-
-function sliderClearInfo(time) {
-  [sliderName, sliderRole, sliderContact, sliderText].forEach(function (el) {
-    var elLen = el.innerHTML.length;
-    var timer = time / elLen;
-
-    var _loop2 = function _loop2(i) {
-      setTimeout(function () {
-        el.innerHTML = el.innerHTML.slice(0, elLen - i);
-      }, timer * i);
-    };
-
-    for (var i = 1; i <= elLen; i++) {
-      _loop2(i);
-    }
+    el.innerHTML = data;
   });
 }
 
-function sliderFadeIn(time, direction) {
-  // showing photo after additional one transition time (giving it time to load)
-  setTimeout(function () {
-    sliderImg.classList.remove('slider__el--transparent');
-  }, time); // showing info letter by letter
+function sliderFadeIn(direction) {
+  // show person's info
+  sliderChangeInfo(sliderChooseMember(direction)); // show photo
 
-  sliderDisplayInfo(time, sliderChooseMember(direction));
+  sliderImgs[slider_current_member].classList.remove('slider__img--hidden');
 }
 
-function sliderFadeOut(time) {
+function sliderFadeOut() {
   // make photo transparent
-  sliderImg.classList.add('slider__el--transparent'); // remove info letter by letter
-
-  sliderClearInfo(time);
+  sliderImgs[slider_current_member].classList.add('slider__img--hidden');
 }
 
 function sliderSlide(direction) {
-  var sliderEl = document.querySelector('.slider__el'); // time for how long it takes to hide or show the photo (one transition)
+  // fade out the previous photo
+  // (-1 means no member was shown yet, hence there is no photo to fade out)
+  if (slider_current_member !== -1) {
+    sliderFadeOut();
+  } // show next info and photo
 
-  var time = parseFloat(getComputedStyle(sliderEl)['transitionDuration']) * 1000;
-  sliderFadeOut(time); // after one transition length show the info
-  // after two lengths show the img (giving it time to load)
 
-  setTimeout(function () {
-    sliderFadeIn(time, direction);
-  }, time);
-}
+  sliderFadeIn(direction);
+} // preload photos to browser memory for faster loading when switching between people
 
+
+function PreloadTeamPhotos() {
+  for (var i = 0; i < teamData_len; i++) {
+    // new Image().src = rootUrl + teamData.team[i].photo;
+    var img = document.createElement('img');
+    img.classList.add('slider__el');
+    img.classList.add('slider__img--hidden');
+    img.classList.add('slider__img');
+    img.setAttribute('src', rootUrl + teamData.team[i].photo);
+    sliderPhoto.appendChild(img);
+    sliderImgs = document.querySelectorAll('.slider__img');
+  }
+} // when site loads: load team data. preload photos, load the first person, activate the progressbar
+
+
+window.addEventListener('load', function () {
+  LoadDataJSON("".concat(rootUrl, "src/team.json")).then(function (data) {
+    teamData = data;
+    teamData_len = data.team.length;
+    PreloadTeamPhotos();
+    sliderSlide('next');
+    progressbar.start(); // run the progressbar from progressbar.js
+  });
+});
+/* ProgressBar */
+
+var progressbar = new Progressbar(document.querySelector('.slider__progress-bar'), 5);
 sliderArrowPrevious.addEventListener('click', function () {
   sliderSlide('previous');
 });
 sliderArrowNext.addEventListener('click', function () {
   sliderSlide('next');
-}); // when site loads - preload photos and load the first person
-
-window.addEventListener('load', function () {
-  LoadDataJSON().then(function (res) {
-    PreloadTeamPhotos();
-    sliderSlide('next');
-  });
-  progressbar.start(); // run the progressbar from progressbar.js
 });
-/* ProgressBar */
-
-var progressbar = new Progressbar(document.querySelector('.slider__progress-bar'), 3);
 sliderArrowPrevious.addEventListener('mouseover', function () {
   progressbar.stop();
 });

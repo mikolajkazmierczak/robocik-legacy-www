@@ -18,7 +18,7 @@ class Progressbar {
 
   start() {
     this.step();
-    console.log('ProgressBar: Running.');
+    console.log('ProgressBar: Running...');
   }
 
   step() {
@@ -45,6 +45,6 @@ class Progressbar {
 
   stop() {
     clearInterval(this.interval);
-    console.log('ProgressBar: Paused.');
+    console.log('ProgressBar: Paused');
   }
 }
