@@ -56,7 +56,7 @@
     </section>
 
     <div class="wave-bar">
-      <img class="lax" src="<?php echo $rootUrl . 'src/img/wave.svg' ?>"
+      <img class="lax" src="<?php echo $rootUrl . 'src/img/wave.svg?v=1' ?>"
            data-lax-preset_small="rightToLeft-0.25"
            data-lax-preset_medium="rightToLeft-0.5"
            alt="Wave image">

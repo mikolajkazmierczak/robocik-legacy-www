@@ -18,7 +18,7 @@
     });
   </script>
 
-  <script src="dist/idanchors.js?v=1"></script>
+  <script src="dist/idanchors.js?v=2"></script>
   <script src="src/lib/smooth-scroll.polyfills.min.js"></script>
   <script>
     let scroll = new SmoothScroll('a[href*="#"]', {
@@ -30,23 +30,22 @@
   </script>
 
   <script src="src/lib/anime.min.js"></script>
-  <script src="dist/wavesbg.js?v=2"></script>
+  <script src="dist/wavesbg.js?v=3"></script>
 
-  <script src="dist/_global.js?v=3"></script>
-  <script src="dist/_util.js"></script>
+  <script src="dist/_global.js?v=4"></script>
+  <script src="dist/_util.js?v=1"></script>
 
-  <script src="dist/header.js?v=4"></script>
-  <script src="dist/menu.js?v=4"></script>
-  <script src="dist/popup.js"></script>
+  <script src="dist/header.js?v=5"></script>
+  <script src="dist/menu.js?v=5"></script>
+  <script src="dist/popup.js?v=1"></script>
 
-  <script src="dist/progressbar.js?v=2"></script>
-  <script src="dist/team_arrows.js?v=2"></script>
-  <script src="dist/team.js?v=4"></script>
+  <script src="dist/progressbar.js?v=3"></script>
+  <script src="dist/team_arrows.js?v=3"></script>
+  <script src="dist/team.js?v=5"></script>
 
-  <script src="dist/newsletter.js?v=2"></script>
+  <script src="dist/newsletter.js?v=3"></script>
 
-
-  <script src="dist/lang.js"></script>
+  <script src="dist/lang.js?v=1"></script>
 
 </body>
 
