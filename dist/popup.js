@@ -97,6 +97,8 @@ function () {
 
 var popup = new Popup(document.querySelector('.popup'));
 window.addEventListener('resize', function () {
-  popup.close();
+  if (window.innerWidth > 780) {
+    popup.close();
+  }
 });
 //# sourceMappingURL=popup.js.map

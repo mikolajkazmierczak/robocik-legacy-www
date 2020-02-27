@@ -79,5 +79,7 @@ class Popup {
 let popup = new Popup(document.querySelector('.popup'));
 
 window.addEventListener('resize', () => {
-  popup.close();
+  if(window.innerWidth > 780) {
+    popup.close();
+  }
 });

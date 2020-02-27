@@ -32,6 +32,8 @@ menuButton.el.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-  menu.close();
+  if(window.innerWidth > 780) {
+    menu.close();
+  }
 });
 

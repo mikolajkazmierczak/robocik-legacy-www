@@ -47,6 +47,8 @@ menuButton.el.addEventListener('click', function () {
   }
 });
 window.addEventListener('resize', function () {
-  menu.close();
+  if (window.innerWidth > 780) {
+    menu.close();
+  }
 });
 //# sourceMappingURL=menu.js.map
