@@ -14,7 +14,7 @@
         content="koło naukowe robocik, kn robocik, pwr diving crew, politechnika wrocławska, pwr, robot, roboty, robotyka, automatyka, ekologia, ekologiczne, nauka, naukowe, innowacja, innowacyjne">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 
 <body>

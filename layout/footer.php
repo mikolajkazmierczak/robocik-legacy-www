@@ -35,9 +35,9 @@
   <script src="dist/_global.js?v=4"></script>
   <script src="dist/_util.js?v=1"></script>
 
-  <script src="dist/header.js?v=5"></script>
-  <script src="dist/menu.js?v=5"></script>
-  <script src="dist/popup.js?v=1"></script>
+  <script src="dist/header.js?v=8"></script>
+  <script src="dist/menu.js?v=8"></script>
+  <script src="dist/popup.js?v=4"></script>
 
   <script src="dist/progressbar.js?v=3"></script>
   <script src="dist/team_arrows.js?v=3"></script>
