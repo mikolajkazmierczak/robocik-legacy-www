@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0a39f9b-5fc0-4a65-aba8-62aeeaa47c41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/menu.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/menu.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/popup.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/popup.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,7 @@
       <workItem from="1582550549350" duration="14973000" />
       <workItem from="1582636378953" duration="4142000" />
       <workItem from="1582643677427" duration="352000" />
-      <workItem from="1582762099639" duration="557000" />
+      <workItem from="1582762099639" duration="1810000" />
     </task>
     <servers />
   </component>
