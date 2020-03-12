@@ -19,7 +19,6 @@ function () {
     this.visible = false;
     this.links = document.querySelectorAll('[data-popup]');
     this.links.forEach(function (link) {
-      console.log(link);
       link.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -30,6 +29,10 @@ function () {
     });
     this.popupButton = document.querySelector('.popup__close');
     this.popupButton.addEventListener('click', function () {
+      _this.close();
+    });
+    this.popupBackground = document.querySelector('.popup__bg');
+    this.popupBackground.addEventListener('click', function () {
       _this.close();
     });
   }

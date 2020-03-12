@@ -8,7 +8,6 @@ class Popup {
 
     this.links = document.querySelectorAll('[data-popup]');
     this.links.forEach(link => {
-      console.log(link);
       link.addEventListener('click', (e)=>{
         e.preventDefault();
         this.load(link.getAttribute('href'));
@@ -18,6 +17,10 @@ class Popup {
 
     this.popupButton = document.querySelector('.popup__close');
     this.popupButton.addEventListener('click', ()=>{
+      this.close();
+    });
+    this.popupBackground = document.querySelector('.popup__bg');
+    this.popupBackground.addEventListener('click', ()=>{
       this.close();
     });
   }
