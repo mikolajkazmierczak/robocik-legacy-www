@@ -1172,7 +1172,7 @@ header .menu-button .menu-button__icon--active {
     margin: calc(100vw/16) 0;
   }
   .popup .popup__main .popup__content {
-    padding: 0 55px 55px;
+    padding: 0 55px 55px 55px;
   }
 
   .popup--flexible .popup__main {
@@ -1860,9 +1860,15 @@ section .section__text--project p {
   justify-content: center;
   align-items: center;
 }
-.partners .partners__logos img {
+.partners .partners__logos a {
   padding: 10px;
   width: 50%;
+}
+.partners .partners__logos a img {
+  width: 100%;
+}
+.partners .partners__logos .partners__logos__br {
+  width: 100%;
 }
 
 @media only screen and (min-width: 780px) {
@@ -1870,7 +1876,7 @@ section .section__text--project p {
     margin: 60px auto;
     width: 20%;
   }
-  .partners .partners__logos img {
+  .partners .partners__logos a {
     width: 20%;
   }
 }
